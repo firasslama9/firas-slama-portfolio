@@ -77,7 +77,7 @@ if (reduceMotion) {
 }
 
 // Reveal the About delivery path and Toolkit cards as they enter the viewport.
-const revealItems = document.querySelectorAll('.delivery-step, .tool-card');
+const revealItems = document.querySelectorAll('.about-visual');
 if (reduceMotion || !('IntersectionObserver' in window)) {
   revealItems.forEach(item => item.classList.add('is-visible'));
 } else {
