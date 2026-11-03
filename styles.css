@@ -303,3 +303,42 @@
   .project .tag-row{gap:8px;margin-top:19px}
   .project .tag-row span{min-height:32px;padding:7px 11px;font-size:10.5px}
 }
+
+
+/* Selected work: project identity visuals sit between each description and its KPIs. */
+.project-visual{
+  width:100%;margin:16px 0 0;overflow:hidden;border-radius:12px;
+  display:flex;align-items:center;justify-content:center
+}
+.project-visual-photo{
+  height:142px;background:#eee7dd;border:1px solid #5d554d;
+  box-shadow:0 7px 20px #00000018
+}
+.project-visual-photo img{
+  display:block;width:100%;height:100%;object-fit:cover;object-position:center 52%;
+  border-radius:inherit
+}
+.project-visual-logo{
+  height:132px;padding:10px 16px;background:#f8f5ef;
+  border:1px solid #e4ddd3;box-shadow:0 7px 20px #00000016
+}
+.project-visual-logo img{
+  display:block;width:100%;height:100%;object-fit:contain;object-position:center;
+  border-radius:5px
+}
+.project-visual-summer{background:#fffdf9}
+.project-visual-italy{background:#fffdf9;padding:8px 14px}
+.project-visual-ncube{height:116px;padding:8px 14px;background:#fffdf9}
+.project-visual-ncube img{
+  width:auto;height:auto;max-width:min(100%,260px);max-height:98px;
+  object-fit:contain;image-rendering:auto
+}
+.project-featured .project-visual-photo{height:154px;margin-top:18px}
+.project-featured .tag-row{margin-top:17px}
+@media(max-width:700px){
+  .project-visual{margin-top:14px}
+  .project-visual-photo{height:132px}
+  .project-visual-logo{height:124px;padding:9px 13px}
+  .project-visual-ncube{height:108px}
+  .project-featured .project-visual-photo{height:140px}
+}
