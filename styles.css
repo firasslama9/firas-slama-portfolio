@@ -135,3 +135,18 @@
   .delivery-step,.toolkit-grid .tool-card{opacity:1!important;transform:none!important;transition:none!important}
   .count-up.is-counting{animation:none!important}
 }
+
+
+/* Keep motion limited to three secondary elements; the number counters remain the main animation. */
+.hero-visual:before{animation:none}
+.about-visual{opacity:0;transform:translateY(14px);transition:opacity .75s ease,transform .75s ease}
+.about-visual.is-visible{opacity:1;transform:translateY(0)}
+.delivery-step{opacity:1;transform:none;transition:border-color .2s,background .2s}
+.delivery-step.is-visible{opacity:1;transform:none}
+.toolkit-grid .tool-card{opacity:1;transform:none;transition:transform .22s ease,border-color .22s,background .22s}
+.toolkit-grid .tool-card.is-visible{opacity:1;transform:none}
+.toolkit-grid .tool-card:hover{transform:translateY(-3px)}
+@media(prefers-reduced-motion:reduce){
+  .about-visual{opacity:1!important;transform:none!important;transition:none!important}
+  .toolkit-grid .tool-card{transition:none!important}
+}
