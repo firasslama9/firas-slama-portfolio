@@ -402,3 +402,156 @@
   .project-visual-summer{height:138px;margin-top:15px}
   .project-visual-ncube{height:160px;margin-top:15px}
 }
+
+
+/* SELECTED WORK — full-width editorial project cards with genuinely visible artwork. */
+.work-section .project-grid{
+  grid-template-columns:minmax(0,1fr);
+  gap:20px;
+}
+.work-section .project-card{
+  display:grid;
+  grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);
+  grid-template-areas:
+    "topline topline"
+    "role visual"
+    "title visual"
+    "summary visual"
+    "metrics metrics"
+    "tags tags"
+    "details details";
+  column-gap:clamp(28px,4vw,54px);
+  row-gap:0;
+  align-items:start;
+  padding:30px 34px 28px;
+  min-width:0;
+}
+.work-section .project-card > .project-topline{grid-area:topline;grid-column:1/-1;margin-bottom:25px}
+.work-section .project-card > .role-tag{grid-area:role;align-self:end;margin:0 0 11px}
+.work-section .project-card > h3{grid-area:title;min-height:0;margin:0 0 15px;font-size:clamp(29px,3vw,38px);line-height:1.1}
+.work-section .project-card > .project-summary{grid-area:summary;min-height:0;max-width:610px;margin:0 0 6px}
+.work-section .project-card > .project-visual{
+  grid-area:visual;
+  width:100%;
+  height:100%;
+  min-height:310px;
+  margin:0;
+  padding:15px;
+  align-self:stretch;
+  border:1px solid #e5ded4;
+  border-radius:15px;
+  background:#fffdf9;
+  box-shadow:0 10px 28px #00000020;
+  overflow:hidden;
+}
+.work-section .project-card > .project-visual img{
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:100%;
+  max-height:none;
+  object-position:center;
+}
+.work-section .project-card > .metric-pair{
+  grid-area:metrics;
+  grid-column:1/-1;
+  margin-top:26px;
+  padding:19px 0;
+  gap:18px;
+}
+.work-section .project-card > .tag-row{grid-area:tags;grid-column:1/-1;margin-top:19px}
+.work-section .project-card > .project-details{grid-area:details;grid-column:1/-1;margin-top:20px}
+
+/* Portrait identity artwork: use the full panel height, never squeeze into a small square. */
+.work-section .project-card > .project-visual-igv-square{
+  width:100%;height:100%;min-height:310px;
+  padding:12px;
+  background:#fff;
+}
+.work-section .project-card > .project-visual-igv-square img{
+  width:100%;height:100%;object-fit:contain;
+}
+
+/* Italy source contains two complete logos side by side; each gets its own portrait tile. */
+.work-section .project-card > .project-visual-italy-pair{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-rows:minmax(0,1fr);
+  gap:12px;
+  padding:12px;
+  min-height:310px;
+  background:#fffdf9;
+}
+.work-section .project-card .italy-logo-crop{
+  width:100%;height:100%;min-height:0;aspect-ratio:auto;
+  overflow:hidden;border:1px solid #e8e1d8;border-radius:11px;
+  background:#fff;box-shadow:none;
+}
+.work-section .project-card .italy-logo-crop img{
+  position:absolute;top:0;left:0;
+  width:200%;height:100%;max-width:none;max-height:none;
+  object-fit:cover;
+}
+.work-section .project-card .italy-logo-right img{left:-100%}
+
+/* Summer Peak is a real event photograph, so present it as a large editorial crop. */
+.work-section .project-card > .project-visual-summer{
+  min-height:330px;padding:0;background:#e8ded0;
+}
+.work-section .project-card > .project-visual-summer img{
+  object-fit:cover;object-position:center 58%;
+}
+
+/* Ncube's original file has oversized built-in white margins; enlarge the artwork inside its frame. */
+.work-section .project-card > .project-visual-ncube{
+  min-height:310px;padding:0;background:#fff;
+}
+.work-section .project-card > .project-visual-ncube img{
+  width:100%;height:100%;object-fit:cover;object-position:center;
+  transform:scale(1.9);
+}
+
+/* Keep the Safran photograph's previous size and crop exactly as before. */
+.work-section .project-featured .project-visual-photo{
+  height:154px;min-height:0;margin-top:18px;padding:0;
+}
+
+/* Tablet and phone: stack the visual below the project story, with generous image height. */
+@media(max-width:900px){
+  .work-section .project-card{
+    grid-template-columns:minmax(0,1fr);
+    grid-template-areas:"topline" "role" "title" "summary" "visual" "metrics" "tags" "details";
+    row-gap:0;
+    padding:27px 28px 25px;
+  }
+  .work-section .project-card > .project-visual{
+    height:320px;min-height:320px;margin-top:19px;
+  }
+  .work-section .project-card > .project-visual-italy-pair{
+    height:320px;min-height:320px;
+  }
+  .work-section .project-card > .project-visual-summer{height:340px;min-height:340px}
+  .work-section .project-card > .project-visual-ncube{height:300px;min-height:300px}
+  .work-section .project-card > .metric-pair{margin-top:22px}
+}
+@media(max-width:600px){
+  .work-section .project-card{padding:22px 19px 22px;border-radius:13px}
+  .work-section .project-card > .project-topline{gap:8px;font-size:9px;margin-bottom:20px}
+  .work-section .project-card > h3{font-size:29px}
+  .work-section .project-card > .project-summary{font-size:12px;line-height:1.75}
+  .work-section .project-card > .project-visual{
+    height:285px;min-height:285px;margin-top:16px;padding:11px;
+  }
+  .work-section .project-card > .project-visual-italy-pair{
+    height:270px;min-height:270px;padding:9px;gap:8px;
+  }
+  .work-section .project-card > .project-visual-summer{
+    height:310px;min-height:310px;padding:0;
+  }
+  .work-section .project-card > .project-visual-ncube{
+    height:250px;min-height:250px;padding:0;
+  }
+  .work-section .project-card > .metric-pair{gap:9px;padding:15px 0}
+  .work-section .project-card > .metric-pair strong{font-size:23px}
+  .work-section .project-card > .metric-pair span{font-size:10px}
+}
