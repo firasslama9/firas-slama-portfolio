@@ -150,3 +150,76 @@
   .about-visual{opacity:1!important;transform:none!important;transition:none!important}
   .toolkit-grid .tool-card{transition:none!important}
 }
+
+
+/* Word-free About illustration: let the artwork, not labels, tell the story. */
+.about-visual{
+  display:flex;align-items:center;justify-content:center;min-width:0;max-width:590px;margin-left:auto;
+  padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;
+  box-shadow:none!important;overflow:visible!important
+}
+.about-illustration{display:block;width:100%;height:auto;max-width:570px;overflow:visible;filter:drop-shadow(0 16px 22px #332a1b12)}
+.about-visual.is-visible{opacity:1;transform:translateY(0)}
+
+/* Toolkit skill chips are deliberately larger and colour-coded for quick scanning. */
+.toolkit-grid .tool-card{padding:27px 27px 25px;min-height:258px}
+.tool-card-heading{display:flex;align-items:center;gap:16px;min-height:66px;margin-bottom:18px}
+.tool-icon{
+  flex:0 0 62px;width:62px;height:62px;border-radius:17px;
+  background:#fa684f20;border:1px solid #fa684f59;
+  display:grid;place-items:center;color:#ff927d
+}
+.tool-icon svg{width:38px;height:38px;display:block}
+.tool-card-title{display:flex;flex:1;min-width:0;flex-direction:column;justify-content:center;gap:5px}
+.tool-card-title .tool-no{display:block;color:#f18a76;font-size:9px;line-height:1.2;letter-spacing:.15em;font-weight:850}
+.toolkit-grid .tool-card .tool-card-title h3{
+  font-size:clamp(19px,2vw,23px);line-height:1.12;letter-spacing:-.045em;
+  margin:0;color:#fffdf9;overflow-wrap:normal
+}
+.toolkit-grid .tool-card>p{font-size:12px;line-height:1.7;color:#c9c2ba;max-width:500px;margin:0 0 19px;min-height:41px}
+.tool-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:auto}
+.tool-tags span{
+  display:inline-flex;align-items:center;justify-content:center;min-height:35px;
+  padding:8px 12px;border:1px solid transparent;border-radius:9px;
+  font-size:11px;line-height:1.25;font-weight:700;letter-spacing:.005em
+}
+.tool-card:nth-child(1) .tool-tags span{background:#fa684f25;border-color:#fa684f60;color:#ffd9d0}
+.tool-card:nth-child(2) .tool-tags span{background:#91a79a25;border-color:#91a79a63;color:#dfede3}
+.tool-card:nth-child(3) .tool-tags span{background:#c5a65f25;border-color:#c5a65f65;color:#f4e7c4}
+.tool-card:nth-child(4) .tool-tags span{background:#89aebb25;border-color:#89aebb65;color:#dcecf0}
+
+/* Give the software/tool names the same visual importance as the methods. */
+.software-row{
+  display:grid;grid-template-columns:1fr;gap:13px;align-items:start;
+  padding-top:25px;margin-top:26px;border-top:1px solid #5a554f
+}
+.software-label{display:block;color:#f18a76;font-size:10px;line-height:1.2;letter-spacing:.15em;font-weight:850}
+.software-tags{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:10px}
+.software-tags span{
+  display:inline-flex;align-items:center;min-height:39px;padding:9px 15px;
+  border:1px solid #625b53;border-radius:10px;background:#393632;
+  color:#f3eee7;font-size:12px;line-height:1.2;letter-spacing:.01em;font-weight:700
+}
+.software-tags span:nth-child(3n+1){border-color:#aa5c4d;background:#49322e}
+.software-tags span:nth-child(3n+2){border-color:#7b967f;background:#344139}
+
+/* Keep the illustration and the first Toolkit card balanced on smaller screens. */
+@media(max-width:900px){
+  .about-visual{max-width:100%}
+  .toolkit-grid .tool-card{padding:23px 22px;min-height:250px}
+  .tool-tags span{font-size:10.5px;padding:8px 10px}
+}
+@media(max-width:700px){
+  .about-visual{width:100%;max-width:520px;margin:0 auto}
+  .about-illustration{width:100%}
+  .toolkit-grid .tool-card{min-height:unset;padding:22px 20px}
+  .tool-card-heading{gap:14px;margin-bottom:15px}
+  .tool-icon{flex-basis:56px;width:56px;height:56px}
+  .tool-icon svg{width:34px;height:34px}
+  .toolkit-grid .tool-card .tool-card-title h3{font-size:20px}
+  .toolkit-grid .tool-card>p{min-height:unset;margin-bottom:16px}
+  .tool-tags{gap:8px}
+  .tool-tags span{min-height:34px;font-size:11px}
+  .software-tags{gap:8px}
+  .software-tags span{min-height:36px;font-size:11px;padding:8px 12px}
+}
