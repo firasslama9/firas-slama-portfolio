@@ -2259,7 +2259,7 @@
   color:#d5cfc8;
 }
 .work-section .project-grid > .project-card.igv-card > .project-visual-igv{
-  width:min(100%,430px);
+  width:min(100%,455px);
   height:auto;
   min-height:0;
   aspect-ratio:2.21 / 1;
@@ -2275,9 +2275,9 @@
   object-position:center;
 }
 .work-section .project-grid > .project-card.summer-card > .project-visual-summer{
-  width:162px;
-  height:216px;
-  min-height:216px;
+  width:155px;
+  height:207px;
+  min-height:207px;
   align-self:center;
   margin:0 auto 13px;
   padding:0;
@@ -2452,9 +2452,9 @@
     width:min(100%,430px);
   }
   .work-section .project-grid > .project-card.summer-card > .project-visual-summer{
-    width:170px;
-    height:226px;
-    min-height:226px;
+    width:155px;
+    height:207px;
+    min-height:207px;
   }
   .work-section .details-grid{
     grid-template-columns:1fr;
