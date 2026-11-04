@@ -2035,3 +2035,386 @@
     font-size:30px;
   }
 }
+
+
+/* Selected Work — unified compact project gallery.
+   All five projects use the same card structure so information stays readable
+   while the section uses the available width more efficiently. */
+.work-section{
+  padding:62px 0 66px;
+}
+.work-section .work-heading{
+  margin:24px 0 29px;
+  gap:30px;
+}
+.work-section .work-heading h2{
+  font-size:clamp(38px,4.1vw,48px);
+  line-height:1.08;
+}
+.work-section .project-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+  align-items:stretch;
+}
+.work-section .project-grid > .project{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  grid-template-areas:
+    "top"
+    "role"
+    "title"
+    "summary"
+    "visual"
+    "metrics"
+    "tags"
+    "fineprint"
+    "details";
+  align-content:start;
+  align-items:start;
+  min-width:0;
+  min-height:0;
+  height:100%;
+  margin:0;
+  padding:17px 18px 15px;
+  overflow:hidden;
+  background:#302e2c;
+  border:1px solid #46423e;
+  border-radius:14px;
+  color:#fffdf9;
+  box-shadow:0 8px 24px #00000012;
+}
+.work-section .project-grid > .project.project-featured,
+.work-section .project-grid > .project.project-card{
+  margin:0;
+  padding:17px 18px 15px;
+}
+.work-section .project-grid .project-topline{
+  grid-area:top;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  margin:0 0 10px;
+  color:#f38c78;
+  font-size:8px;
+  line-height:1.35;
+  letter-spacing:.08em;
+  font-weight:750;
+}
+.work-section .project-grid .project-topline span:last-child{
+  color:#aaa39c;
+  text-align:right;
+  white-space:nowrap;
+}
+.work-section .project-grid .role-tag{
+  grid-area:role;
+  margin:0 0 6px;
+  color:#f18a76;
+  font-size:8.5px;
+  line-height:1.4;
+  letter-spacing:.055em;
+  font-weight:750;
+}
+.work-section .project-grid .project h3,
+.work-section .project-grid > .project h3{
+  grid-area:title;
+  min-height:0;
+  margin:0 0 8px;
+  color:#fffdf9;
+  font-size:clamp(20px,1.8vw,24px);
+  line-height:1.12;
+  letter-spacing:-.035em;
+  font-weight:760;
+}
+.work-section .project-grid .project-summary{
+  grid-area:summary;
+  min-height:0;
+  max-width:none;
+  margin:0 0 12px;
+  color:#d0cac3;
+  font-size:11.5px;
+  line-height:1.58;
+}
+.work-section .project-grid .project-visual{
+  grid-area:visual;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:145px;
+  min-height:145px;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  border-radius:9px;
+  box-shadow:none;
+}
+.work-section .project-grid .project-visual img{
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:none;
+  max-height:none;
+  border:0;
+  border-radius:inherit;
+}
+
+/* Keep photo treatment for Safran and the agreed full-bleed Ncube crop. */
+.work-section .project-grid .project-visual-safran{
+  background:#eee7dd;
+  border:1px solid #5d554d;
+}
+.work-section .project-grid .project-visual-safran img{
+  object-fit:cover;
+  object-position:center 52%;
+}
+.work-section .project-grid .project-visual-ncube-photo{
+  height:158px;
+  min-height:158px;
+  background:#302e2c;
+  border:1px solid #5d554d;
+}
+.work-section .project-grid .project-visual-ncube-photo img{
+  object-fit:cover;
+  object-position:center 88%;
+}
+
+/* Identity artwork remains fully visible on a clean light panel. */
+.work-section .project-grid .project-visual-igv,
+.work-section .project-grid .project-visual-italy{
+  padding:8px 12px;
+  background:#fffdf9;
+  border:1px solid #e5ded4;
+}
+.work-section .project-grid .project-visual-igv img,
+.work-section .project-grid .project-visual-italy img{
+  object-fit:contain;
+  object-position:center;
+}
+.work-section .project-grid .project-visual-summer{
+  padding:8px 12px;
+  background:#fffdf9;
+  border:1px solid #e5ded4;
+}
+.work-section .project-grid .project-visual-summer img{
+  object-fit:contain;
+  object-position:center;
+}
+
+/* KPI strips use equal cells and keep values/labels legible at card width. */
+.work-section .project-grid .metric-pair{
+  grid-area:metrics;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:7px;
+  margin:11px 0 0;
+  padding:10px 0 0;
+  border-top:1px solid #514b45;
+  border-bottom:0;
+}
+.work-section .project-grid .metric-pair > div{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  gap:4px;
+  min-width:0;
+  min-height:62px;
+  padding:8px 7px;
+  background:#292725;
+  border:1px solid #3d3935;
+  border-radius:8px;
+}
+.work-section .project-grid .metric-pair strong{
+  color:#fa806b;
+  font-size:22px;
+  line-height:1;
+  letter-spacing:-.055em;
+  font-weight:800;
+}
+.work-section .project-grid .metric-pair span{
+  color:#e0dad3;
+  font-size:9px;
+  line-height:1.35;
+  font-weight:600;
+}
+.work-section .project-grid .tag-row{
+  grid-area:tags;
+  display:flex;
+  flex-wrap:wrap;
+  gap:5px;
+  margin:11px 0 0;
+}
+.work-section .project-grid .tag-row span{
+  min-height:0;
+  padding:4px 7px;
+  color:#e1dcd5;
+  border:1px solid #625d57;
+  border-radius:999px;
+  font-size:8px;
+  line-height:1.25;
+  letter-spacing:.015em;
+}
+.work-section .project-grid .fine-print{
+  grid-area:fineprint;
+  margin:7px 0 0;
+  color:#aaa39c;
+  font-size:8px;
+  line-height:1.4;
+}
+.work-section .project-grid .project-details{
+  grid-area:details;
+  margin:12px 0 0;
+  padding:9px 0 0;
+  border-top:1px solid #4a4540;
+}
+.work-section .project-grid .project-details summary{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  color:#fffdf9;
+  font-size:10px;
+  line-height:1.4;
+  font-weight:700;
+}
+.work-section .project-grid .project-details summary span{
+  color:#fa806b;
+  font-size:16px;
+}
+.work-section .project-grid .details-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+  margin:12px 0 0;
+  padding:0 0 5px;
+}
+.work-section .project-grid .details-grid h4{
+  margin:0 0 5px;
+  color:#fa806b;
+  font-size:8px;
+  line-height:1.35;
+}
+.work-section .project-grid .details-grid p{
+  margin:0;
+  color:#c4beb7;
+  font-size:9px;
+  line-height:1.55;
+}
+.work-section .project-grid .scope-note,
+.work-section .project-grid .metric-footnote{
+  margin:8px 0 0;
+  color:#aaa39c;
+  font-size:8.5px;
+  line-height:1.5;
+}
+.work-section .project-grid .process-line{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin-top:8px;
+  color:#d4cec6;
+  font-size:7px;
+  letter-spacing:.08em;
+}
+.work-section .project-grid .process-line i{
+  min-width:5px;
+  height:1px;
+  background:#fa806b;
+  flex:1;
+}
+.work-section .work-note{
+  margin:15px 0 0;
+  color:#aaa39c;
+  font-size:9px;
+  line-height:1.55;
+}
+
+/* Two columns for smaller laptops/tablets, one calm vertical column on phones. */
+@media(max-width:1050px){
+  .work-section{
+    padding:56px 0 60px;
+  }
+  .work-section .project-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:15px;
+  }
+  .work-section .project-grid > .project{
+    padding:18px 19px 16px;
+  }
+  .work-section .project-grid .project-visual{
+    height:155px;
+    min-height:155px;
+  }
+  .work-section .project-grid .project-visual-ncube-photo{
+    height:170px;
+    min-height:170px;
+  }
+  .work-section .project-grid .metric-pair > div{
+    min-height:64px;
+  }
+}
+@media(max-width:700px){
+  .work-section{
+    padding:48px 0 52px;
+  }
+  .work-section .work-heading{
+    margin:22px 0 23px;
+  }
+  .work-section .work-heading h2{
+    font-size:39px;
+  }
+  .work-section .project-grid{
+    grid-template-columns:minmax(0,1fr);
+    gap:13px;
+  }
+  .work-section .project-grid > .project,
+  .work-section .project-grid > .project.project-featured,
+  .work-section .project-grid > .project.project-card{
+    padding:18px 17px 15px;
+  }
+  .work-section .project-grid .project h3,
+  .work-section .project-grid > .project h3{
+    font-size:23px;
+  }
+  .work-section .project-grid .project-summary{
+    font-size:12px;
+    line-height:1.6;
+  }
+  .work-section .project-grid .project-visual{
+    height:175px;
+    min-height:175px;
+  }
+  .work-section .project-grid .project-visual-ncube-photo{
+    height:190px;
+    min-height:190px;
+  }
+  .work-section .project-grid .metric-pair > div{
+    min-height:66px;
+    padding:9px 8px;
+  }
+  .work-section .project-grid .metric-pair strong{
+    font-size:23px;
+  }
+  .work-section .project-grid .metric-pair span{
+    font-size:9.5px;
+  }
+  .work-section .project-grid .details-grid{
+    grid-template-columns:1fr;
+    gap:11px;
+  }
+}
+@media(max-width:390px){
+  .work-section .project-grid .project-topline{
+    font-size:7.5px;
+  }
+  .work-section .project-grid .metric-pair{
+    gap:5px;
+  }
+  .work-section .project-grid .metric-pair > div{
+    padding:7px 5px;
+  }
+  .work-section .project-grid .metric-pair span{
+    font-size:8.5px;
+  }
+}
