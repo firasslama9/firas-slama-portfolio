@@ -1361,3 +1361,30 @@ button{font:inherit}
 .toolkit-section .tool-card:nth-child(4) .tool-number{color:#a18443}
 .toolkit-section .tool-card:nth-child(4) .tool-symbol{background:#f2ecd9;color:#96783b}
 .toolkit-section .tool-card:nth-child(4) .tool-tags span{background:#f5efdf;color:#8b7139}
+
+
+/* Toolkit software strip — enlarge the heading, app names and icon tiles. */
+.toolkit-section .software-panel .micro-label{
+  font-size:11px;
+  font-weight:850;
+  letter-spacing:.1em;
+}
+.toolkit-section .software-list{gap:12px 22px}
+.toolkit-section .software-list>span{
+  gap:9px;
+  font-size:12px;
+  line-height:1.3;
+  font-weight:750;
+}
+.toolkit-section .software-mark{
+  width:29px;
+  height:29px;
+  border-radius:8px;
+  font-size:15px;
+}
+@media(max-width:700px){
+  .toolkit-section .software-panel .micro-label{font-size:10px}
+  .toolkit-section .software-list{gap:10px 15px}
+  .toolkit-section .software-list>span{font-size:10.5px;gap:7px}
+  .toolkit-section .software-mark{width:25px;height:25px;font-size:13px}
+}
