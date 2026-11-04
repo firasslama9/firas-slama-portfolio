@@ -1388,3 +1388,66 @@ button{font:inherit}
   .toolkit-section .software-list>span{font-size:10.5px;gap:7px}
   .toolkit-section .software-mark{width:25px;height:25px;font-size:13px}
 }
+
+
+/* Make the software names and brand marks genuinely easy to read. */
+.toolkit-section .software-panel{
+  align-items:flex-start;
+  gap:18px 28px;
+  padding:22px 24px;
+}
+.toolkit-section .software-panel .micro-label{
+  font-size:13px;
+  line-height:1.35;
+  font-weight:900;
+  letter-spacing:.11em;
+  color:#435b49;
+}
+.toolkit-section .software-list{
+  gap:16px 26px;
+}
+.toolkit-section .software-list>span{
+  gap:11px;
+  color:#344239;
+  font-size:16px;
+  line-height:1.35;
+  font-weight:800;
+  white-space:nowrap;
+}
+.toolkit-section .software-mark{
+  flex:0 0 42px;
+  width:42px;
+  height:42px;
+  border-radius:11px;
+  font-size:22px;
+  font-weight:900;
+  border:1px solid #d4ddd1;
+  background:#fbfcf8;
+  box-shadow:0 2px 5px #253b2b12;
+}
+.toolkit-section .software-mark.sheets{background:#e5f1e7;color:#188447;border-color:#c9dfce}
+.toolkit-section .software-mark.excel{background:#e2f0e8;color:#087443;border-color:#c5dfd0}
+.toolkit-section .software-mark.drive{background:#fff1d5;color:#b77a12;border-color:#f0dfb8}
+.toolkit-section .software-mark.trello{background:#e4effa;color:#1768a8;border-color:#cbddef}
+.toolkit-section .software-mark.podio{background:#e9edf2;color:#405b78;border-color:#d4dce5}
+.toolkit-section .software-mark.slack{background:#f5e8f0;color:#9b4779;border-color:#ead3e1}
+@media(max-width:700px){
+  .toolkit-section .software-panel{
+    gap:13px;
+    padding:17px 15px;
+  }
+  .toolkit-section .software-panel .micro-label{font-size:11.5px}
+  .toolkit-section .software-list{gap:13px 17px}
+  .toolkit-section .software-list>span{
+    gap:9px;
+    font-size:14px;
+    white-space:normal;
+  }
+  .toolkit-section .software-mark{
+    flex-basis:36px;
+    width:36px;
+    height:36px;
+    border-radius:9px;
+    font-size:19px;
+  }
+}
