@@ -1662,3 +1662,207 @@
     min-height:205px;
   }
 }
+
+
+/* Remove artificial equal-height rows: each featured section should end with its content. */
+.work-section .project-grid{
+  grid-auto-rows:auto;
+}
+
+/* Shared compact featured-card scale for Safran and Ncube. */
+.work-section .project-safran-featured,
+.work-section .project-grid > .project-card.project-ncube-featured{
+  padding:19px 26px 17px;
+}
+.work-section .project-safran-featured > .project-topline,
+.work-section .project-grid > .project-card.project-ncube-featured > .project-topline{
+  margin-bottom:12px;
+  font-size:9px;
+}
+.work-section .project-safran-featured > .project-feature-grid,
+.work-section .project-grid > .project-card.project-ncube-featured > .project-feature-grid{
+  grid-template-columns:1.1fr .9fr;
+  gap:25px;
+}
+.work-section .project-safran-featured .project-title-block > .role-tag,
+.work-section .project-grid > .project-card.project-ncube-featured .project-title-block > .role-tag{
+  margin-bottom:6px;
+  font-size:9px;
+}
+.work-section .project-safran-featured .project-title-block h3,
+.work-section .project-grid > .project-card.project-ncube-featured .project-title-block h3{
+  min-height:0;
+  margin:0 0 9px;
+  font-size:clamp(25px,2.55vw,30px);
+  line-height:1.08;
+}
+.work-section .project-safran-featured .project-title-block .project-summary,
+.work-section .project-grid > .project-card.project-ncube-featured .project-title-block .project-summary{
+  min-height:0;
+  margin:0;
+  font-size:11px;
+  line-height:1.55;
+  max-width:590px;
+}
+.work-section .project-safran-featured .project-title-block > .project-visual-photo{
+  height:132px;
+  min-height:132px;
+  margin:12px 0 0;
+}
+.work-section .project-grid > .project-card.project-ncube-featured .project-visual-ncube-photo{
+  height:185px;
+  min-height:185px;
+  margin:12px 0 0;
+  padding:0;
+  overflow:hidden;
+  border:1px solid #5d554d;
+  border-radius:10px;
+  background:#302e2c;
+}
+.work-section .project-grid > .project-card.project-ncube-featured .project-visual-ncube-photo img{
+  width:100%;
+  height:100%;
+  max-width:none;
+  max-height:none;
+  object-fit:cover;
+  object-position:center 88%;
+  border:0;
+  border-radius:inherit;
+  background:transparent;
+}
+.work-section .project-safran-featured .project-title-block > .tag-row,
+.work-section .project-grid > .project-card.project-ncube-featured .project-title-block > .tag-row{
+  margin-top:11px;
+  gap:6px;
+}
+.work-section .project-safran-featured .project-title-block > .tag-row span,
+.work-section .project-grid > .project-card.project-ncube-featured .project-title-block > .tag-row span{
+  min-height:27px;
+  padding:4px 8px;
+  font-size:8.5px;
+}
+.work-section .project-safran-featured > .project-feature-grid > .project-outcome,
+.work-section .project-grid > .project-card.project-ncube-featured .project-outcome-ncube{
+  grid-template-columns:61px minmax(0,1fr);
+  column-gap:9px;
+  padding-left:20px;
+}
+.work-section .project-safran-featured .project-outcome .outcome-number,
+.work-section .project-grid > .project-card.project-ncube-featured .project-outcome-ncube .outcome-number{
+  font-size:28px;
+  line-height:1.05;
+}
+.work-section .project-safran-featured .project-outcome .outcome-label,
+.work-section .project-grid > .project-card.project-ncube-featured .project-outcome-ncube .outcome-label{
+  font-size:10px;
+  line-height:1.4;
+}
+.work-section .project-safran-featured .project-outcome .outcome-divider,
+.work-section .project-grid > .project-card.project-ncube-featured .project-outcome-ncube .outcome-divider{
+  margin:6px 0;
+}
+.work-section .project-safran-featured .project-outcome .fine-print{
+  font-size:8px;
+  line-height:1.5;
+  margin-top:7px;
+}
+.work-section .project-safran-featured > .project-details,
+.work-section .project-grid > .project-card.project-ncube-featured > .project-details{
+  margin-top:12px;
+  padding-top:9px;
+}
+.work-section .project-safran-featured .details-grid,
+.work-section .project-grid > .project-card.project-ncube-featured .details-grid{
+  gap:14px;
+  margin-top:13px;
+  padding-bottom:7px;
+}
+.work-section .project-safran-featured .process-line{
+  margin-top:5px;
+}
+
+/* Italy: remove the old fourth-card grid template and collapse the blank row below its details. */
+.work-section .project-grid > .project-card.italy-featured{
+  display:block;
+  grid-template-columns:none;
+  grid-template-rows:none;
+  grid-template-areas:none;
+  grid-column:1/-1;
+  align-self:start;
+  height:auto;
+  min-height:0;
+  padding-bottom:12px;
+}
+.work-section .project-grid > .project-card.italy-featured > .project-feature-grid{
+  grid-template-columns:1.1fr .9fr;
+  gap:25px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block h3{
+  margin-bottom:16px;
+}
+.work-section .project-grid > .project-card.italy-featured > .project-details{
+  margin-bottom:0;
+  padding-bottom:0;
+}
+.work-section .project-grid > .project-card.italy-featured .details-grid{
+  margin-top:13px;
+  padding-bottom:0;
+}
+@media(max-width:900px){
+  .work-section .project-safran-featured,
+  .work-section .project-grid > .project-card.project-ncube-featured{
+    padding:19px 23px 17px;
+  }
+  .work-section .project-safran-featured > .project-feature-grid,
+  .work-section .project-grid > .project-card.project-ncube-featured > .project-feature-grid{
+    gap:18px;
+  }
+  .work-section .project-safran-featured .project-title-block > .project-visual-photo{
+    height:125px;
+    min-height:125px;
+  }
+  .work-section .project-grid > .project-card.project-ncube-featured .project-visual-ncube-photo{
+    height:170px;
+    min-height:170px;
+  }
+  .work-section .project-safran-featured > .project-feature-grid > .project-outcome,
+  .work-section .project-grid > .project-card.project-ncube-featured .project-outcome-ncube{
+    grid-template-columns:61px minmax(0,1fr);
+    padding:13px 0 0;
+    border-left:0;
+    border-top:1px solid #4c4741;
+  }
+  .work-section .project-grid > .project-card.italy-featured > .project-feature-grid{
+    gap:18px;
+  }
+}
+@media(max-width:700px){
+  .work-section .project-safran-featured,
+  .work-section .project-grid > .project-card.project-ncube-featured{
+    padding:18px 19px 16px;
+  }
+  .work-section .project-safran-featured .project-title-block h3,
+  .work-section .project-grid > .project-card.project-ncube-featured .project-title-block h3{
+    font-size:27px;
+  }
+  .work-section .project-safran-featured .project-title-block > .project-visual-photo{
+    height:120px;
+    min-height:120px;
+  }
+  .work-section .project-grid > .project-card.project-ncube-featured .project-visual-ncube-photo{
+    height:155px;
+    min-height:155px;
+  }
+  .work-section .project-grid > .project-card.italy-featured > .project-feature-grid{
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+  .work-section .project-grid > .project-card.italy-featured .project-title-block h3{
+    margin-bottom:13px;
+  }
+  .work-section .project-grid > .project-card.italy-featured .project-outcome-italy{
+    border-left:0;
+    border-top:1px solid #4c4741;
+    padding:13px 0 0;
+  }
+}
