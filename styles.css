@@ -1462,3 +1462,162 @@
     border-top:1px solid #4c4741;
   }
 }
+
+
+/* Exact card-height correction: override earlier nth-child align-self:start rules. */
+.work-section .project-grid{
+  align-items:stretch;
+  grid-auto-rows:1fr;
+}
+.work-section .project-grid > .project-card:nth-child(1).igv-card,
+.work-section .project-grid > .project-card:nth-child(2).summer-card{
+  align-self:stretch;
+  height:auto;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+}
+.work-section .project-grid > .project-card:nth-child(1).igv-card > .project-visual-igv,
+.work-section .project-grid > .project-card:nth-child(2).summer-card > .project-visual-summer{
+  flex:0 0 195px;
+  height:195px;
+  min-height:195px;
+  margin-top:14px;
+  margin-bottom:15px;
+}
+.work-section .project-grid > .project-card:nth-child(1).igv-card > .metric-pair,
+.work-section .project-grid > .project-card:nth-child(2).summer-card > .metric-pair{
+  margin-top:auto;
+}
+
+/* Ncube image: let the agreed photo fill the complete landscape frame. */
+.work-section .project-grid > .project-card.project-ncube-featured .project-visual-ncube-photo{
+  display:block;
+  width:100%;
+  height:205px;
+  min-height:205px;
+  margin:13px 0 0;
+  padding:0;
+  overflow:hidden;
+  border:1px solid #5d554d;
+  border-radius:10px;
+  background:#eee7dd;
+}
+.work-section .project-grid > .project-card.project-ncube-featured .project-visual-ncube-photo img{
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:none;
+  max-height:none;
+  object-fit:cover;
+  object-position:center 50%;
+  transform:none;
+  border:0;
+  border-radius:inherit;
+}
+
+/* AIESEC Italy: same featured-card idea, with a distinctly smaller footprint. */
+.work-section .project-grid > .project-card.italy-featured{
+  padding:19px 26px 17px;
+}
+.work-section .project-grid > .project-card.italy-featured > .project-topline{
+  margin-bottom:12px;
+  font-size:9px;
+}
+.work-section .project-grid > .project-card.italy-featured > .project-feature-grid{
+  grid-template-columns:1.1fr .9fr;
+  gap:25px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block > .role-tag{
+  margin-bottom:6px;
+  font-size:9px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block h3{
+  font-size:clamp(25px,2.55vw,30px);
+  line-height:1.08;
+  margin:0 0 8px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block .project-summary{
+  font-size:11px;
+  line-height:1.55;
+}
+.work-section .project-grid > .project-card.italy-featured .project-visual-italy{
+  height:112px;
+  min-height:112px;
+  margin:10px 0 0;
+  padding:7px 11px;
+  border-radius:9px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block > .tag-row{
+  margin-top:10px;
+  gap:5px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block > .tag-row span{
+  min-height:26px;
+  padding:4px 8px;
+  font-size:8px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-outcome-italy{
+  grid-template-columns:61px minmax(0,1fr);
+  column-gap:8px;
+  padding-left:20px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-outcome-italy .outcome-number{
+  font-size:28px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-outcome-italy .outcome-label{
+  font-size:10px;
+  line-height:1.35;
+}
+.work-section .project-grid > .project-card.italy-featured .project-outcome-italy .outcome-divider{
+  margin:6px 0;
+}
+.work-section .project-grid > .project-card.italy-featured > .project-details{
+  margin-top:12px;
+  padding-top:9px;
+}
+@media(max-width:900px){
+  .work-section .project-grid > .project-card.italy-featured{
+    padding:19px 23px 17px;
+  }
+  .work-section .project-grid > .project-card.italy-featured > .project-feature-grid{
+    gap:18px;
+  }
+  .work-section .project-grid > .project-card.italy-featured .project-visual-italy{
+    height:105px;
+    min-height:105px;
+  }
+}
+@media(max-width:700px){
+  .work-section .project-grid{
+    grid-auto-rows:auto;
+  }
+  .work-section .project-grid > .project-card:nth-child(1).igv-card,
+  .work-section .project-grid > .project-card:nth-child(2).summer-card{
+    height:auto;
+    min-height:0;
+  }
+  .work-section .project-grid > .project-card:nth-child(1).igv-card > .project-visual-igv,
+  .work-section .project-grid > .project-card:nth-child(2).summer-card > .project-visual-summer{
+    flex-basis:185px;
+    height:185px;
+    min-height:185px;
+  }
+  .work-section .project-grid > .project-card.italy-featured{
+    padding:19px 20px 17px;
+  }
+  .work-section .project-grid > .project-card.italy-featured > .project-feature-grid{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  .work-section .project-grid > .project-card.italy-featured .project-visual-italy{
+    height:135px;
+    min-height:135px;
+  }
+  .work-section .project-grid > .project-card.italy-featured .project-outcome-italy{
+    grid-template-columns:61px minmax(0,1fr);
+    padding:13px 0 0;
+    border-left:0;
+    border-top:1px solid #4c4741;
+  }
+}
