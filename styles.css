@@ -1852,3 +1852,18 @@ button{font:inherit}
     animation:none!important;
   }
 }
+
+
+/* Toolkit software logos — remove the individual badge/frame backgrounds. */
+.software-mark{
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+.software-mark img{
+  display:block;
+  width:21px;
+  height:21px;
+  object-fit:contain;
+}
