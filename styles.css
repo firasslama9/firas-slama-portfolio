@@ -1005,3 +1005,40 @@
   }
   .work-section .project-ncube-featured .project-outcome-ncube .outcome-number{font-size:32px}
 }
+
+
+/* Ncube photograph: show the complete original image, with no cover crop. */
+.work-section .project-ncube-featured .project-visual-ncube-photo{
+  display:block;
+  width:100%;
+  height:auto;
+  min-height:0;
+  max-height:none;
+  aspect-ratio:auto;
+  margin:18px 0 0;
+  padding:0;
+  overflow:visible;
+  background:transparent;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+}
+.work-section .project-ncube-featured .project-visual-ncube-photo img{
+  display:block;
+  width:100%;
+  height:auto;
+  min-height:0;
+  max-width:100%;
+  max-height:none;
+  object-fit:contain;
+  object-position:center;
+  transform:none;
+  border:1px solid #5d554d;
+  border-radius:11px;
+  background:#eee7dd;
+}
+@media(max-width:900px){
+  .work-section .project-ncube-featured .project-visual-ncube-photo{
+    height:auto;min-height:0
+  }
+}
