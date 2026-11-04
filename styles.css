@@ -2112,32 +2112,13 @@ button{font:inherit}
 }
 
 
-/* Ncube 3.0 photograph: center the image within its frame instead of biasing the crop toward the bottom. */
+/* Ncube photo: crop away some of the empty left side and center the event scene in the frame. */
 .image-ncube img{
-  object-position:center center!important;
-}
-
-
-/* Ncube photo: shift the photograph slightly right within its existing frame. */
-.image-ncube img{
-  object-position:40% center!important;
-}
-
-
-/* Final Ncube alignment: center the full photograph within its frame. */
-.image-ncube img{
-  object-position:50% 50%!important;
-}
-
-
-/* Ncube photo: zoom in slightly and shift the visible composition to the right to fill the frame more fully. */
-.image-ncube img{
-  width:112%!important;
-  height:112%!important;
-  max-width:none!important;
-  max-height:none!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:100%!important;
+  max-height:100%!important;
   object-fit:cover!important;
-  object-position:center center!important;
-  transform:translateX(4%) scale(1.08)!important;
-  transform-origin:center center!important;
+  object-position:right center!important;
+  transform:none!important;
 }
