@@ -2143,3 +2143,34 @@ button{font:inherit}
 .about-section .stats-band.about-stats .stat-item{
   padding:7px 5px!important;
 }
+
+
+/* Definitive reset for the About metrics: no cards, tiles, borders or separators. */
+#about .stats-band.about-stats,
+#about .stats-band.about-stats > .stat-item,
+#about .stats-band.about-stats > .stat-item .stat-value-row,
+#about .stats-band.about-stats > .stat-item .stat-icon{
+  background:none!important;
+  background-color:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  outline:0!important;
+}
+#about .stats-band.about-stats::before,
+#about .stats-band.about-stats::after,
+#about .stats-band.about-stats > .stat-item::before,
+#about .stats-band.about-stats > .stat-item::after{
+  content:none!important;
+  display:none!important;
+}
+#about .stats-band.about-stats{
+  padding:0!important;
+}
+#about .stats-band.about-stats > .stat-item{
+  min-height:0!important;
+  padding:7px 5px!important;
+  border-left:0!important;
+  border-right:0!important;
+}
