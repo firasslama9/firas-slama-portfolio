@@ -1638,3 +1638,17 @@ button{font:inherit}
   color:#62685f !important;
   border:1px solid #e5e3da !important;
 }
+
+
+/* Toolkit category numbers — scale them to balance the larger headings. */
+.toolkit-section .tool-card .tool-number{
+  font-size:clamp(23px,2.1vw,29px);
+  line-height:1;
+  font-weight:800;
+  letter-spacing:-.055em;
+}
+@media(max-width:700px){
+  .toolkit-section .tool-card .tool-number{
+    font-size:22px;
+  }
+}
