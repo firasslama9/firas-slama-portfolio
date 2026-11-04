@@ -2122,3 +2122,9 @@ button{font:inherit}
 .image-ncube img{
   object-position:40% center!important;
 }
+
+
+/* Final Ncube alignment: center the full photograph within its frame. */
+.image-ncube img{
+  object-position:50% 50%!important;
+}
