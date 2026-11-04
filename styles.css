@@ -1621,3 +1621,44 @@
     border-top:1px solid #4c4741;
   }
 }
+
+
+/* Ncube photo refinement: fill the image frame and focus on the event, not the ceiling. */
+.work-section .project-grid > .project-card.project-ncube-featured .project-visual-ncube-photo{
+  display:block;
+  width:100%;
+  height:250px;
+  min-height:250px;
+  margin:13px 0 0;
+  padding:0;
+  overflow:hidden;
+  background:#302e2c;
+  border:1px solid #5d554d;
+  border-radius:10px;
+  box-shadow:none;
+}
+.work-section .project-grid > .project-card.project-ncube-featured .project-visual-ncube-photo img{
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:none;
+  max-height:none;
+  object-fit:cover;
+  object-position:center 88%;
+  transform:none;
+  border:0;
+  border-radius:inherit;
+  background:transparent;
+}
+@media(max-width:900px){
+  .work-section .project-grid > .project-card.project-ncube-featured .project-visual-ncube-photo{
+    height:230px;
+    min-height:230px;
+  }
+}
+@media(max-width:600px){
+  .work-section .project-grid > .project-card.project-ncube-featured .project-visual-ncube-photo{
+    height:205px;
+    min-height:205px;
+  }
+}
