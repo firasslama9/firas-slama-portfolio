@@ -2112,14 +2112,14 @@ button{font:inherit}
 }
 
 
-/* Ncube photo: zoom toward the event activity so the empty left edge is cropped and the scene is centered. */
+/* Ncube photo: crop the left side decisively and bring the presenter into the center of the frame. */
 .image-ncube img{
   width:100%!important;
   height:100%!important;
   max-width:100%!important;
   max-height:100%!important;
   object-fit:cover!important;
-  object-position:center center!important;
-  transform:scale(1.28)!important;
-  transform-origin:70% 50%!important;
+  object-position:right center!important;
+  transform:scale(1.85)!important;
+  transform-origin:right center!important;
 }
