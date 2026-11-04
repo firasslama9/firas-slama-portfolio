@@ -587,3 +587,36 @@ button{font:inherit}
     font-size:31px;
   }
 }
+
+
+/* Final visibility pass for About credentials and focus labels. */
+.about-section .focus-pill{
+  min-height:39px;
+  padding:9px 17px;
+  font-size:10px;
+}
+.about-section .about-stats .stat-item{
+  min-height:128px;
+}
+.about-section .about-stats .stat-item strong{
+  font-size:clamp(40px,3.8vw,49px);
+}
+.about-section .about-stats .stat-item span{
+  font-size:11px;
+}
+@media(max-width:700px){
+  .about-section .focus-pill{
+    min-height:34px;
+    padding:8px 11px;
+    font-size:8px;
+  }
+  .about-section .about-stats .stat-item{
+    min-height:110px;
+  }
+  .about-section .about-stats .stat-item strong{
+    font-size:37px;
+  }
+  .about-section .about-stats .stat-item span{
+    font-size:9.5px;
+  }
+}
