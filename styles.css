@@ -1276,3 +1276,26 @@ button{font:inherit}
   .toolkit-section .tool-card>p{font-size:10px}
   .contact-section .contact-copy>p:not(.eyebrow){font-size:11px}
 }
+
+
+/* Selected Work: make all five project summaries clearly readable. */
+.work-section .work-feature .project-description{
+  font-size:16px;
+  line-height:1.8;
+  font-weight:400;
+}
+.work-section .work-card .project-description{
+  font-size:14.5px;
+  line-height:1.75;
+  font-weight:400;
+}
+@media(max-width:700px){
+  .work-section .work-feature .project-description{
+    font-size:14.5px;
+    line-height:1.75;
+  }
+  .work-section .work-card .project-description{
+    font-size:13.5px;
+    line-height:1.7;
+  }
+}
