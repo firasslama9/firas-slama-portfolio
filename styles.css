@@ -2095,3 +2095,18 @@ button{font:inherit}
 /* Native Tunisian flag emoji in hero metadata. */
 .hero-meta .tunisia-flag-emoji{display:inline-block;margin-left:3px;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;font-size:16px;line-height:1;vertical-align:-2px}
 @media(max-width:700px){.hero-meta .tunisia-flag-emoji{font-size:15px}}
+
+
+/* Render the Tunisian flag emoji as an image so Windows does not show the regional-letter fallback "TN". */
+.hero-meta img.tunisia-flag-emoji{
+  display:inline-block;
+  width:19px;
+  height:19px;
+  margin-left:3px;
+  object-fit:contain;
+  vertical-align:-5px;
+  flex:0 0 19px;
+}
+@media(max-width:700px){
+  .hero-meta img.tunisia-flag-emoji{width:17px;height:17px;flex-basis:17px}
+}
