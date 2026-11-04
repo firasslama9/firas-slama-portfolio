@@ -1896,3 +1896,46 @@ button{font:inherit}
   height:100%;
   object-fit:contain;
 }
+
+
+/* Selected Work KPIs — slightly calmer scale and weight, while keeping them prominent. */
+.work-section .result-item strong{
+  font-size:40px!important;
+  font-weight:760!important;
+}
+.work-section .result-item span{
+  font-size:12.5px!important;
+  font-weight:650!important;
+}
+.work-section .compact-results strong{
+  font-size:31px!important;
+  font-weight:760!important;
+}
+.work-section .compact-results span{
+  font-size:11px!important;
+  font-weight:650!important;
+}
+.work-section .italy-results strong{
+  font-size:35px!important;
+  font-weight:760!important;
+}
+.work-section .italy-results span{
+  font-size:12px!important;
+  font-weight:650!important;
+}
+@media(max-width:700px){
+  .work-section .result-item strong{font-size:32px!important}
+  .work-section .result-item span{font-size:10px!important;font-weight:650!important}
+  .work-section .compact-results strong{font-size:25px!important}
+  .work-section .compact-results span{font-size:9px!important;font-weight:650!important}
+  .work-section .italy-results strong{font-size:28px!important}
+  .work-section .italy-results span{font-size:9.5px!important;font-weight:650!important}
+}
+@media(max-width:390px){
+  .work-section .result-item strong{font-size:29px!important}
+  .work-section .result-item span{font-size:9px!important}
+  .work-section .compact-results strong{font-size:23px!important}
+  .work-section .compact-results span{font-size:8.5px!important}
+  .work-section .italy-results strong{font-size:26px!important}
+  .work-section .italy-results span{font-size:9px!important}
+}
