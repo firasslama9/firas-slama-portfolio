@@ -1736,3 +1736,17 @@ button{font:inherit}
   width:18px;
   height:18px;
 }
+
+
+/* Project materials callout — make the supporting copy and link easier to read. */
+.resources-band p{
+  font-size:12px;
+  line-height:1.55;
+}
+.resources-band>a{
+  font-size:12px;
+}
+@media(max-width:700px){
+  .resources-band p{font-size:12px}
+  .resources-band>a{font-size:12px}
+}
