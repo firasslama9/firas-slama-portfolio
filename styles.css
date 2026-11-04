@@ -1867,3 +1867,32 @@ button{font:inherit}
   height:21px;
   object-fit:contain;
 }
+
+
+/* Final override: show software logos directly, with no badge or tile behind them. */
+.toolkit-section .software-mark,
+.toolkit-section .software-mark.sheets,
+.toolkit-section .software-mark.excel,
+.toolkit-section .software-mark.drive,
+.toolkit-section .software-mark.trello,
+.toolkit-section .software-mark.podio,
+.toolkit-section .software-mark.slack{
+  display:inline-flex;
+  flex:0 0 28px;
+  width:28px;
+  height:28px;
+  align-items:center;
+  justify-content:center;
+  padding:0!important;
+  overflow:visible;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+.toolkit-section .software-mark img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
