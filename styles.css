@@ -1042,3 +1042,55 @@
     height:auto;min-height:0
   }
 }
+
+
+/* Final cascade fix: Ncube is a featured card, not the third compact-grid card. */
+.work-section .project-grid > .project-card.project-ncube-featured{
+  display:block;
+  grid-column:1/-1;
+  grid-template-columns:none;
+  grid-template-rows:none;
+  grid-template-areas:none;
+  padding:30px 34px 28px;
+  margin:0;
+}
+.work-section .project-grid > .project-card.project-ncube-featured > .project-feature-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:clamp(30px,5vw,62px);
+  align-items:center;
+}
+.work-section .project-grid > .project-card.project-ncube-featured .project-visual-ncube-photo{
+  display:block;
+  width:100%;
+  height:auto;
+  min-height:0;
+  margin:18px 0 0;
+  overflow:visible;
+}
+.work-section .project-grid > .project-card.project-ncube-featured .project-visual-ncube-photo img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:100%;
+  max-height:none;
+  object-fit:contain;
+  object-position:center;
+  transform:none;
+}
+@media(max-width:900px){
+  .work-section .project-grid > .project-card.project-ncube-featured > .project-feature-grid{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+  .work-section .project-grid > .project-card.project-ncube-featured .project-visual-ncube-photo{
+    height:auto;
+    min-height:0;
+    margin-top:16px;
+  }
+}
+@media(max-width:760px){
+  .work-section .project-grid > .project-card.project-ncube-featured{
+    padding:25px 22px;
+  }
+}
