@@ -1236,3 +1236,43 @@ button{font:inherit}
     font-size:9.5px;
   }
 }
+
+
+/* Section descriptions — improve reading size without adding bold weight. */
+.hero .hero-lead,
+.about-section .about-intro,
+.work-section .work-intro>p,
+.work-section .project-description,
+.work-section .case-grid p,
+.work-section .case-note,
+.toolkit-section .toolkit-intro>p,
+.toolkit-section .tool-card>p,
+.contact-section .contact-copy>p:not(.eyebrow){
+  font-weight:400;
+}
+.hero .hero-lead{font-size:16px}
+.about-section .about-intro{font-size:15px}
+.section-heading .section-aside{font-size:11px}
+.work-section .work-intro>p{font-size:13px}
+.work-section .project-description{font-size:14px;line-height:1.75}
+.work-section .paired-copy .project-description{font-size:12.5px;line-height:1.7}
+.work-section .case-grid p{font-size:11px;line-height:1.7}
+.work-section .case-note{font-size:9px}
+.toolkit-section .toolkit-intro>p{font-size:13px}
+.toolkit-section .tool-card>p{font-size:11px;line-height:1.7}
+.contact-section .contact-copy>p:not(.eyebrow){font-size:12px;line-height:1.8}
+
+@media(max-width:700px){
+  .hero .hero-lead{font-size:14px}
+  .about-section .about-intro{font-size:14px}
+  .section-heading .section-aside{font-size:9px}
+  .work-section .work-intro>p{font-size:12px}
+  .work-section .project-description,
+  .work-section .feature-copy .project-description,
+  .work-section .italy-copy .project-description{font-size:13px}
+  .work-section .paired-copy .project-description{font-size:12px}
+  .work-section .case-grid p{font-size:10.5px}
+  .toolkit-section .toolkit-intro>p{font-size:12px}
+  .toolkit-section .tool-card>p{font-size:10px}
+  .contact-section .contact-copy>p:not(.eyebrow){font-size:11px}
+}
