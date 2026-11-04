@@ -1750,3 +1750,23 @@ button{font:inherit}
   .resources-band p{font-size:12px}
   .resources-band>a{font-size:12px}
 }
+
+
+/* Going Deeper callout — visibly increase all three text elements. */
+.resources-band .micro-label{
+  font-size:11px !important;
+  line-height:1.4;
+}
+.resources-band p{
+  font-size:15px !important;
+  line-height:1.6;
+}
+.resources-band>a{
+  font-size:14px !important;
+  line-height:1.5;
+}
+@media(max-width:700px){
+  .resources-band .micro-label{font-size:11px !important}
+  .resources-band p{font-size:14px !important}
+  .resources-band>a{font-size:14px !important}
+}
