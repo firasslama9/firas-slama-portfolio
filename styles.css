@@ -796,3 +796,59 @@
     font-size:10px
   }
 }
+
+
+/* Ncube replacement photo: preserve its own landscape proportions, like Safran's photo. */
+.work-section .project-grid > .project-card:nth-child(3){
+  grid-template-columns:minmax(0,1fr);
+  grid-template-areas:
+    "topline"
+    "role"
+    "title"
+    "summary"
+    "visual"
+    "metrics"
+    "tags"
+    "details";
+  gap:0;
+}
+.work-section .project-grid > .project-card:nth-child(3) > .project-visual-ncube{
+  display:block;
+  width:100%;
+  height:auto;
+  min-height:0;
+  max-height:none;
+  aspect-ratio:auto;
+  margin:18px 0 0;
+  padding:0;
+  overflow:hidden;
+  border:1px solid #5d554d;
+  border-radius:13px;
+  background:#eee7dd;
+  box-shadow:0 7px 20px #00000018;
+}
+.work-section .project-grid > .project-card:nth-child(3) > .project-visual-ncube img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:100%;
+  max-height:none;
+  object-fit:contain;
+  object-position:center;
+  transform:none;
+  border-radius:inherit;
+}
+.work-section .project-grid > .project-card:nth-child(3) > .metric-pair{
+  margin-top:22px;
+}
+@media(max-width:900px){
+  .work-section .project-grid > .project-card:nth-child(3){
+    grid-template-columns:minmax(0,1fr);
+    grid-template-areas:"topline" "role" "title" "summary" "visual" "metrics" "tags" "details";
+  }
+  .work-section .project-grid > .project-card:nth-child(3) > .project-visual-ncube{
+    height:auto;
+    min-height:0;
+    margin-top:16px;
+  }
+}
