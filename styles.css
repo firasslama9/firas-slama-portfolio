@@ -1816,3 +1816,39 @@ button{font:inherit}
   .hero .hero-sticker{font-size:10px;padding:14px 16px}
   .brand-copy>span{font-size:8px;letter-spacing:.1em}
 }
+
+
+/* Subtle hero motion: keep the portrait and PLAN / ALIGN / DELIVER alive
+   without making the opening section feel busy. */
+@keyframes portrait-float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-7px)}
+}
+@keyframes portrait-image-drift{
+  0%,100%{transform:scale(1.025) translateY(0)}
+  50%{transform:scale(1.045) translateY(-3px)}
+}
+@keyframes sticker-float{
+  0%,100%{transform:translateY(0) rotate(-5deg)}
+  50%{transform:translateY(-9px) rotate(-3deg)}
+}
+@keyframes hero-shape-drift{
+  0%,100%{translate:0 0}
+  50%{translate:0 -7px}
+}
+.hero-photo{
+  animation:portrait-float 7s ease-in-out infinite;
+}
+.hero-photo img{
+  animation:portrait-image-drift 11s ease-in-out infinite;
+}
+.hero-sticker{
+  animation:sticker-float 5.5s ease-in-out infinite;
+}
+.hero-shape-one{animation:hero-shape-drift 9s ease-in-out infinite}
+.hero-shape-two{animation:hero-shape-drift 11s ease-in-out infinite reverse}
+@media(prefers-reduced-motion:reduce){
+  .hero-photo,.hero-photo img,.hero-sticker,.hero-shape-one,.hero-shape-two{
+    animation:none!important;
+  }
+}
