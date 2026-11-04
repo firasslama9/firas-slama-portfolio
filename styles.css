@@ -1866,3 +1866,52 @@
     padding:13px 0 0;
   }
 }
+
+
+/* Final Italy spacing: distinct hierarchy above the copy, no surplus below the card. */
+.work-section .project-grid > .project-card.italy-featured{
+  align-self:start;
+  height:auto;
+  min-height:0;
+  margin-bottom:0;
+  padding-bottom:0;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block > .role-tag{
+  margin:0 0 13px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block h3{
+  margin:0 0 17px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block .project-summary{
+  margin:0;
+}
+.work-section .project-grid > .project-card.italy-featured > .project-details{
+  margin:9px 0 0;
+  padding:8px 0 0;
+}
+.work-section .project-grid > .project-card.italy-featured .details-grid{
+  margin:11px 0 0;
+  padding:0;
+}
+.work-section .project-grid > .project-card.italy-featured .details-grid > div{
+  margin:0;
+}
+
+/* Trim unused space after the final project card while keeping the section breathable. */
+.work-section{
+  padding-bottom:52px;
+}
+.work-section .work-note{
+  margin:12px 0 0;
+}
+@media(max-width:700px){
+  .work-section .project-grid > .project-card.italy-featured .project-title-block > .role-tag{
+    margin-bottom:11px;
+  }
+  .work-section .project-grid > .project-card.italy-featured .project-title-block h3{
+    margin-bottom:14px;
+  }
+  .work-section{
+    padding-bottom:42px;
+  }
+}
