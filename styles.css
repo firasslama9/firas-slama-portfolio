@@ -1181,3 +1181,19 @@ button{font:inherit}
   .work-section .italy-results strong{font-size:27px}
   .work-section .italy-results span{font-size:9.5px}
 }
+
+
+/* Selected Work skill tags — slightly larger, while keeping KPI figures dominant. */
+.work-section .skill-list span{
+  font-size:10px;
+  line-height:1.3;
+  padding:5px 9px;
+}
+.work-section .work-card .skill-list span{
+  font-size:9px;
+  padding:4px 8px;
+}
+@media(max-width:700px){
+  .work-section .skill-list span{font-size:9px}
+  .work-section .work-card .skill-list span{font-size:8px}
+}
