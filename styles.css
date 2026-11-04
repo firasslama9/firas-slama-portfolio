@@ -1339,3 +1339,25 @@ button{font:inherit}
   .toolkit-section .tool-card>p{font-size:12px;line-height:1.65}
   .toolkit-section .tool-tags span{font-size:9px;padding:5px 8px}
 }
+
+
+/* Toolkit colour accents: four muted tones that stay within the site's visual identity. */
+.toolkit-section .tool-card:nth-child(1) h3,
+.toolkit-section .tool-card:nth-child(1) .tool-number{color:#55785d}
+.toolkit-section .tool-card:nth-child(1) .tool-symbol{background:#e3eee2;color:#55785d}
+.toolkit-section .tool-card:nth-child(1) .tool-tags span{background:#eaf2e8;color:#4f7055}
+
+.toolkit-section .tool-card:nth-child(2) h3,
+.toolkit-section .tool-card:nth-child(2) .tool-number{color:#477b83}
+.toolkit-section .tool-card:nth-child(2) .tool-symbol{background:#e1eff0;color:#477b83}
+.toolkit-section .tool-card:nth-child(2) .tool-tags span{background:#e8f2f3;color:#416f77}
+
+.toolkit-section .tool-card:nth-child(3) h3,
+.toolkit-section .tool-card:nth-child(3) .tool-number{color:#b36c4e}
+.toolkit-section .tool-card:nth-child(3) .tool-symbol{background:#f4e7df;color:#b36c4e}
+.toolkit-section .tool-card:nth-child(3) .tool-tags span{background:#f7ece5;color:#9f6047}
+
+.toolkit-section .tool-card:nth-child(4) h3,
+.toolkit-section .tool-card:nth-child(4) .tool-number{color:#a18443}
+.toolkit-section .tool-card:nth-child(4) .tool-symbol{background:#f2ecd9;color:#96783b}
+.toolkit-section .tool-card:nth-child(4) .tool-tags span{background:#f5efdf;color:#8b7139}
