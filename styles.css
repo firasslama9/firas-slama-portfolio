@@ -2128,3 +2128,16 @@ button{font:inherit}
 .image-ncube img{
   object-position:50% 50%!important;
 }
+
+
+/* Ncube photo: zoom in slightly and shift the visible composition to the right to fill the frame more fully. */
+.image-ncube img{
+  width:112%!important;
+  height:112%!important;
+  max-width:none!important;
+  max-height:none!important;
+  object-fit:cover!important;
+  object-position:center center!important;
+  transform:translateX(4%) scale(1.08)!important;
+  transform-origin:center center!important;
+}
