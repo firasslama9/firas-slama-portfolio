@@ -1464,3 +1464,15 @@ button{font:inherit}
   height:100%;
   object-fit:contain;
 }
+
+
+/* Use self-contained vector marks so logos never depend on third-party image hosts. */
+.toolkit-section .software-mark{
+  padding:6px;
+}
+.toolkit-section .software-mark svg{
+  display:block;
+  width:100%;
+  height:100%;
+  overflow:visible;
+}
