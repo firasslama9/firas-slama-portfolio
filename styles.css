@@ -2073,3 +2073,15 @@ button{font:inherit}
   width:100%;
   height:100%;
 }
+
+
+/* Refined Tunisian flag proportions: larger centered star within the crescent. */
+.hero-meta .tunisia-flag{
+  width:24px;
+  height:16px;
+}
+.hero-meta .tunisia-flag svg{
+  width:100%;
+  height:100%;
+  display:block;
+}
