@@ -2116,3 +2116,9 @@ button{font:inherit}
 .image-ncube img{
   object-position:center center!important;
 }
+
+
+/* Ncube photo: shift the photograph slightly right within its existing frame. */
+.image-ncube img{
+  object-position:40% center!important;
+}
