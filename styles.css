@@ -1484,6 +1484,21 @@ button{font:inherit}
   align-items:center;
   justify-content:center;
 }
+
+/* Keep the brand marks clean, without individual logo tiles. */
+.toolkit-section .software-mark{
+  background:transparent;
+  border:0;
+  box-shadow:none;
+  border-radius:0;
+  padding:0;
+}
+.toolkit-section .software-list>span{
+  font-size:14px;
+}
+@media(max-width:700px){
+  .toolkit-section .software-list>span{font-size:12px}
+}
 .toolkit-section .software-mark img{
   display:block;
   width:50%;
