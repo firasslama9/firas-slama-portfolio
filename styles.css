@@ -1092,3 +1092,52 @@ button{font:inherit}
   .about-section .about-stats .stat-item strong{font-size:34px}
   .about-section .about-stats .stat-item .stat-label{font-size:10.5px}
 }
+
+
+/* Selected Work KPIs — larger, high-contrast figures and readable labels. */
+.work-section .result-item strong{
+  font-size:40px;
+  font-weight:850;
+  letter-spacing:-.065em;
+}
+.work-section .result-item span{
+  font-size:11px;
+  line-height:1.45;
+  font-weight:700;
+}
+.work-section .compact-results strong{
+  font-size:30px;
+  font-weight:850;
+  letter-spacing:-.06em;
+}
+.work-section .compact-results span{
+  font-size:10px;
+  line-height:1.4;
+  font-weight:700;
+}
+.work-section .italy-results strong{
+  font-size:34px;
+  font-weight:850;
+  letter-spacing:-.06em;
+}
+.work-section .italy-results span{
+  font-size:10.5px;
+  line-height:1.45;
+  font-weight:700;
+}
+@media(max-width:700px){
+  .work-section .result-item strong{font-size:32px}
+  .work-section .result-item span{font-size:9px}
+  .work-section .compact-results strong{font-size:25px}
+  .work-section .compact-results span{font-size:8.5px}
+  .work-section .italy-results strong{font-size:28px}
+  .work-section .italy-results span{font-size:8.5px}
+}
+@media(max-width:390px){
+  .work-section .result-item strong{font-size:29px}
+  .work-section .result-item span{font-size:8px}
+  .work-section .compact-results strong{font-size:23px}
+  .work-section .compact-results span{font-size:8px}
+  .work-section .italy-results strong{font-size:25px}
+  .work-section .italy-results span{font-size:8px}
+}
