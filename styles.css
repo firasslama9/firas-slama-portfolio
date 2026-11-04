@@ -1723,3 +1723,16 @@ button{font:inherit}
   .contact-section .contact-portrait .contact-name{font-size:18px}
   .contact-section .contact-portrait .contact-role{font-size:10px}
 }
+
+
+/* Consistent, crisp SVG icons in the contact links. */
+.contact-links .contact-icon-svg{
+  display:block;
+  width:17px;
+  height:17px;
+  flex:none;
+}
+.contact-links .contact-icon-svg.brand-icon{
+  width:18px;
+  height:18px;
+}
