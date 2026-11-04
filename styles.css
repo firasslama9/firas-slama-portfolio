@@ -852,3 +852,156 @@
     margin-top:16px;
   }
 }
+
+
+/* Layout correction: iGV must not reserve an empty image column. */
+.work-section .project-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  align-items:start;
+  gap:18px;
+}
+.work-section .project-grid > .project-card:nth-child(1){
+  display:flex;
+  flex-direction:column;
+  align-self:start;
+  height:auto;
+  min-height:0;
+  padding:24px 25px;
+}
+.work-section .project-grid > .project-card:nth-child(1) > .project-topline{margin-bottom:19px}
+.work-section .project-grid > .project-card:nth-child(1) > .role-tag{margin-bottom:10px}
+.work-section .project-grid > .project-card:nth-child(1) > h3{
+  min-height:0;margin-bottom:13px;font-size:clamp(25px,2.45vw,32px)
+}
+.work-section .project-grid > .project-card:nth-child(1) > .project-summary{
+  min-height:0;margin:0 0 4px;font-size:12px;line-height:1.75
+}
+.work-section .project-grid > .project-card:nth-child(1) > .metric-pair{
+  margin-top:17px;padding-top:13px
+}
+
+/* Summer Peak: keep the previous compact, side-by-side card and prominent photograph. */
+.work-section .project-grid > .project-card:nth-child(2){
+  display:flex;flex-direction:column;align-self:start;height:auto;min-height:0;
+  padding:24px 25px;
+}
+.work-section .project-grid > .project-card:nth-child(2) > .project-summary{
+  min-height:0;margin-bottom:14px;font-size:12px;line-height:1.7
+}
+.work-section .project-grid > .project-card:nth-child(2) > .project-visual-summer{
+  width:100%;height:215px;min-height:215px;margin:1px 0 15px;padding:0;
+  border-radius:12px;background:#e8ded0
+}
+.work-section .project-grid > .project-card:nth-child(2) > .project-visual-summer img{
+  width:100%;height:100%;object-fit:cover;object-position:center 58%
+}
+.work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;
+  margin-top:16px;padding:0;border:0
+}
+.work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair > div{
+  min-width:0;min-height:82px;justify-content:center;gap:6px;
+  padding:11px 9px;background:#393633;border:1px solid #514b44;border-radius:10px
+}
+.work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair strong{
+  font-size:clamp(26px,2.5vw,31px);line-height:1.05;letter-spacing:-.055em
+}
+.work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair span{
+  font-size:11px;line-height:1.35;color:#eee8e0;font-weight:650
+}
+
+/* Ncube: mirror the featured Safran composition, not a giant standalone gallery card. */
+.work-section .project-grid > .project-ncube-featured{
+  grid-column:1/-1;
+  display:block;
+  padding:30px 34px 28px;
+  margin:0;
+  background:#2c2a28;
+}
+.work-section .project-ncube-featured > .project-topline{margin-bottom:23px}
+.work-section .project-ncube-featured .project-feature-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:clamp(30px,5vw,62px);
+  align-items:center;
+}
+.work-section .project-ncube-featured .project-title-block{min-width:0}
+.work-section .project-ncube-featured .project-title-block h3{
+  min-height:0;margin-bottom:15px;
+  font-size:clamp(29px,3.2vw,39px);line-height:1.12
+}
+.work-section .project-ncube-featured .project-title-block .project-summary{
+  min-height:0;margin-bottom:0;max-width:590px
+}
+.work-section .project-ncube-featured .project-visual-ncube-photo{
+  width:100%;height:165px;min-height:0;margin:18px 0 0;padding:0;
+  display:block;overflow:hidden;border-radius:11px;
+  background:#eee7dd;border:1px solid #5d554d;
+  box-shadow:0 7px 20px #00000018;
+}
+.work-section .project-ncube-featured .project-visual-ncube-photo img{
+  display:block;width:100%;height:100%;max-width:100%;max-height:none;
+  object-fit:cover;object-position:center 50%;transform:none;border-radius:inherit
+}
+.work-section .project-ncube-featured .project-title-block > .tag-row{
+  margin-top:17px
+}
+.work-section .project-ncube-featured .project-outcome-ncube{
+  border-left:1px solid #4c4741;
+  border-top:0;
+  padding:0 0 0 clamp(22px,3.3vw,38px);
+  display:grid;
+  grid-template-columns:76px minmax(0,1fr);
+  align-items:center;
+  column-gap:13px;
+  row-gap:2px;
+}
+.work-section .project-ncube-featured .project-outcome-ncube .outcome-number{
+  font-size:36px;line-height:1.05
+}
+.work-section .project-ncube-featured .project-outcome-ncube .outcome-label{
+  font-size:12px;line-height:1.5
+}
+.work-section .project-ncube-featured .project-outcome-ncube .outcome-divider{
+  grid-column:1/-1;margin:11px 0
+}
+.work-section .project-ncube-featured > .project-details{margin-top:22px}
+
+/* Compact responsive behaviour without changing the visual hierarchy. */
+@media(max-width:900px){
+  .work-section .project-ncube-featured .project-feature-grid{
+    grid-template-columns:1fr;gap:24px
+  }
+  .work-section .project-ncube-featured .project-visual-ncube-photo{
+    height:190px
+  }
+  .work-section .project-ncube-featured .project-outcome-ncube{
+    border-left:0;border-top:1px solid #4c4741;
+    padding:20px 0 0;grid-template-columns:76px minmax(0,1fr)
+  }
+}
+@media(max-width:760px){
+  .work-section .project-grid{grid-template-columns:minmax(0,1fr)}
+  .work-section .project-grid > .project-card:nth-child(1),
+  .work-section .project-grid > .project-card:nth-child(2){
+    padding:22px 20px
+  }
+  .work-section .project-grid > .project-card:nth-child(2) > .project-visual-summer{
+    height:230px;min-height:230px
+  }
+  .work-section .project-grid > .project-ncube-featured{
+    padding:25px 22px
+  }
+}
+@media(max-width:600px){
+  .work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair > div{
+    min-height:76px;padding:9px 7px
+  }
+  .work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair strong{font-size:25px}
+  .work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair span{font-size:10px}
+  .work-section .project-ncube-featured .project-visual-ncube-photo{height:170px}
+  .work-section .project-ncube-featured .project-outcome-ncube{
+    grid-template-columns:66px minmax(0,1fr)
+  }
+  .work-section .project-ncube-featured .project-outcome-ncube .outcome-number{font-size:32px}
+}
