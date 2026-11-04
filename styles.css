@@ -1520,3 +1520,93 @@ button{font:inherit}
 @media(max-width:700px){
   .toolkit-section .software-mark .podio-wordmark{font-size:9px}
 }
+
+
+/* Toolkit redesign — restrained editorial palette, consistent with the site. */
+.toolkit-section{
+  background:#f1eee7;
+}
+.toolkit-section .toolkit-grid{
+  gap:16px;
+}
+.toolkit-section .tool-card{
+  position:relative;
+  min-height:225px;
+  padding:20px 19px 18px;
+  overflow:hidden;
+  background:#fbfaf7;
+  border:1px solid #e2ded5;
+  border-radius:15px;
+  box-shadow:0 5px 18px rgba(45,48,41,.045);
+  transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.toolkit-section .tool-card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:19px;
+  right:19px;
+  height:2px;
+  background:#8a9685;
+  opacity:.72;
+}
+.toolkit-section .tool-card:hover{
+  transform:translateY(-3px);
+  border-color:#c9cec3;
+  box-shadow:0 12px 26px rgba(45,48,41,.075);
+}
+.toolkit-section .tool-card .tool-number{
+  color:#8b8d83;
+}
+.toolkit-section .tool-card .tool-symbol{
+  width:38px;
+  height:38px;
+  border-radius:12px;
+  background:#eeeee8;
+  color:#59675a;
+}
+.toolkit-section .tool-card .tool-symbol svg{
+  stroke:currentColor;
+}
+.toolkit-section .tool-card h3{
+  color:#30372f;
+}
+.toolkit-section .tool-card>p{
+  color:#77796f;
+}
+.toolkit-section .tool-card .tool-tags span{
+  background:#f0efe9;
+  color:#62685f;
+  border:1px solid #e5e3da;
+  border-radius:6px;
+}
+.toolkit-section .software-panel{
+  margin-top:20px;
+  padding:18px 21px;
+  background:#e8e7df;
+  border:1px solid #ddddd3;
+  border-radius:13px;
+}
+.toolkit-section .software-panel .micro-label{
+  color:#596459;
+}
+.toolkit-section .software-list>span{
+  color:#3c433c;
+}
+.toolkit-section .software-mark{
+  background:transparent;
+  border:0;
+  box-shadow:none;
+}
+@media(max-width:700px){
+  .toolkit-section .toolkit-grid{gap:11px}
+  .toolkit-section .tool-card{
+    min-height:210px;
+    padding:17px 14px 15px;
+    border-radius:12px;
+  }
+  .toolkit-section .tool-card::before{
+    left:14px;
+    right:14px;
+  }
+}
