@@ -649,3 +649,150 @@
     height:210px;min-height:210px;
   }
 }
+
+
+/* Follow-up layout: keep iGV + Summer Peak compact, remove retired image slots. */
+.work-section .project-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  align-items:stretch;
+  gap:18px;
+}
+.work-section .project-grid > .project-card:nth-child(1),
+.work-section .project-grid > .project-card:nth-child(2){
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  min-height:100%;
+  padding:23px 24px 22px;
+}
+.work-section .project-grid > .project-card:nth-child(1) > .project-topline,
+.work-section .project-grid > .project-card:nth-child(2) > .project-topline{
+  margin-bottom:17px;font-size:9px
+}
+.work-section .project-grid > .project-card:nth-child(1) > h3,
+.work-section .project-grid > .project-card:nth-child(2) > h3{
+  min-height:0;font-size:clamp(24px,2.4vw,31px);line-height:1.12;margin-bottom:11px
+}
+.work-section .project-grid > .project-card:nth-child(1) > .project-summary,
+.work-section .project-grid > .project-card:nth-child(2) > .project-summary{
+  min-height:0;font-size:12px;line-height:1.7;margin-bottom:14px
+}
+.work-section .project-grid > .project-card:nth-child(2) > .project-visual-summer{
+  height:225px;min-height:225px;margin:2px 0 17px;padding:0;
+  background:#e8ded0
+}
+.work-section .project-grid > .project-card:nth-child(2) > .project-visual-summer img{
+  width:100%;height:100%;object-fit:contain;object-position:center
+}
+
+/* Restore readable KPIs: stronger figures, legible labels and separate stat cells. */
+.work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair{
+  grid-area:auto;
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:9px;margin-top:auto;padding:13px 0 3px;
+  border:0;
+}
+.work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair > div{
+  min-width:0;min-height:83px;justify-content:center;gap:6px;
+  padding:12px 10px;background:#393633;
+  border:1px solid #514b44;border-radius:10px;
+}
+.work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair strong{
+  font-size:clamp(27px,2.7vw,32px);line-height:1.05;letter-spacing:-.055em
+}
+.work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair span{
+  font-size:11px;line-height:1.35;color:#eee8e0;font-weight:650
+}
+.work-section .project-grid > .project-card:nth-child(-n+2) > .tag-row{
+  gap:7px;margin-top:15px
+}
+.work-section .project-grid > .project-card:nth-child(-n+2) > .tag-row span{
+  min-height:31px;padding:6px 9px;font-size:9.5px
+}
+
+/* Remaining projects return to full-width rows; no blank panel for Italy. */
+.work-section .project-grid > .project-card:nth-child(n+3){
+  grid-column:1/-1;
+}
+.work-section .project-grid > .project-card:nth-child(3){
+  display:grid;
+  grid-template-columns:minmax(0,1.08fr) minmax(320px,.92fr);
+  grid-template-areas:
+    "topline topline"
+    "role visual"
+    "title visual"
+    "summary visual"
+    "metrics metrics"
+    "tags tags"
+    "details details";
+  gap:0 clamp(28px,4vw,54px);
+  padding:30px 34px 28px;
+}
+.work-section .project-grid > .project-card:nth-child(4){
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  grid-template-areas:
+    "topline"
+    "role"
+    "title"
+    "summary"
+    "metrics"
+    "tags"
+    "details";
+  gap:0;
+  padding:30px 34px 28px;
+}
+.work-section .project-grid > .project-card:nth-child(4) > .project-summary{
+  max-width:760px;
+}
+.work-section .project-grid > .project-card:nth-child(4) > .metric-pair{
+  max-width:760px;
+}
+.work-section .project-grid > .project-card:nth-child(4) > .metric-pair > div{
+  min-height:76px;padding:10px 13px;border-radius:10px;
+  background:#393633;border:1px solid #514b44
+}
+.work-section .project-grid > .project-card:nth-child(4) > .metric-pair strong{
+  font-size:28px
+}
+.work-section .project-grid > .project-card:nth-child(4) > .metric-pair span{
+  font-size:11px;line-height:1.4
+}
+@media(max-width:900px){
+  .work-section .project-grid{grid-template-columns:minmax(0,1fr)}
+  .work-section .project-grid > .project-card:nth-child(3){
+    grid-template-columns:minmax(0,1fr);
+    grid-template-areas:"topline" "role" "title" "summary" "visual" "metrics" "tags" "details";
+    padding:27px 28px 25px;
+  }
+  .work-section .project-grid > .project-card:nth-child(3) > .project-visual{
+    height:300px;min-height:300px;margin:19px 0 0
+  }
+  .work-section .project-grid > .project-card:nth-child(4){
+    padding:27px 28px 25px
+  }
+}
+@media(max-width:760px){
+  .work-section .project-grid{grid-template-columns:minmax(0,1fr)}
+  .work-section .project-grid > .project-card:nth-child(1),
+  .work-section .project-grid > .project-card:nth-child(2){
+    padding:22px 19px
+  }
+  .work-section .project-grid > .project-card:nth-child(-n+2) > .project-visual-summer{
+    height:240px;min-height:240px
+  }
+}
+@media(max-width:600px){
+  .work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair{
+    gap:7px
+  }
+  .work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair > div{
+    min-height:78px;padding:9px 7px
+  }
+  .work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair strong{
+    font-size:25px
+  }
+  .work-section .project-grid > .project-card:nth-child(-n+2) > .metric-pair span{
+    font-size:10px
+  }
+}
