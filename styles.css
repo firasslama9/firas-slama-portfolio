@@ -2007,3 +2007,50 @@ button{font:inherit}
   .hero-meta{font-size:11px!important;gap:12px}
   .tunisia-flag{font-size:15px}
 }
+
+
+/* Draw the Tunisian flag with CSS so it renders consistently without emoji-font support. */
+.hero-meta .tunisia-flag{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:24px;
+  height:16px;
+  margin-left:3px;
+  overflow:hidden;
+  vertical-align:-3px;
+  background:#e70013;
+  border-radius:2px;
+  box-shadow:0 0 0 1px #00000012;
+  font-size:initial;
+  line-height:1;
+}
+.hero-meta .tunisia-flag>span{
+  position:relative;
+  display:block;
+  width:10px;
+  height:10px;
+  border:1.5px solid #fff;
+  border-radius:50%;
+}
+.hero-meta .tunisia-flag>span:before{
+  content:"";
+  position:absolute;
+  width:7px;
+  height:7px;
+  left:3px;
+  top:0;
+  border:1.2px solid #e70013;
+  border-radius:50%;
+  background:#fff;
+}
+.hero-meta .tunisia-flag>span:after{
+  content:"★";
+  position:absolute;
+  left:3px;
+  top:0px;
+  color:#e70013;
+  font-size:5px;
+  line-height:8px;
+}
