@@ -168,10 +168,10 @@ button{font:inherit}
 .paired-copy h3{margin:0 0 9px;color:#262923;font-size:clamp(21px,2.2vw,27px);line-height:1.08;letter-spacing:-.055em}
 .paired-copy h3 em{font-family:var(--serif);font-weight:400;color:#768c76}
 .paired-copy .project-description{font-size:10.5px;line-height:1.63}
-.image-logo{background:#fffdf9;border-color:#e5dfd6}
+.image-logo{background:transparent;border-color:transparent;box-shadow:none}
 .image-logo img{object-fit:contain;object-position:center}
-.image-igv{width:100%;max-width:190px;aspect-ratio:2.21/1;height:auto;justify-self:center;padding:0;background:#fffdf9}
-.image-igv img{object-fit:contain}
+.image-igv{width:100%;max-width:190px;aspect-ratio:2.21/1;height:auto;justify-self:center;padding:0;background:transparent;border-color:transparent}
+.image-igv img{object-fit:contain;mix-blend-mode:multiply}
 .image-portrait{width:154px;aspect-ratio:3/4;height:auto;justify-self:center;background:#e8e1d6}
 .image-summer img{object-fit:contain;object-position:center}
 .compact-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-top:13px;padding-top:11px;border-top:1px solid #e4ddd2}
@@ -188,8 +188,8 @@ button{font:inherit}
 .italy-copy h3{font-size:clamp(25px,2.8vw,33px);margin-bottom:13px}
 .italy-copy .role-label{margin-bottom:13px}
 .italy-copy .project-description{max-width:630px}
-.image-italy{width:min(100%,310px);height:auto;aspect-ratio:1.82/1;justify-self:center;padding:0;background:#fff;border-color:#e6dfd4}
-.image-italy img{object-fit:contain}
+.image-italy{width:min(100%,310px);height:auto;aspect-ratio:1.82/1;justify-self:center;padding:0;background:transparent;border-color:transparent}
+.image-italy img{object-fit:contain;mix-blend-mode:multiply}
 .italy-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:15px;padding-top:12px;border-top:1px solid #e2dbcf}
 .italy-results>div{display:flex;align-items:center;gap:12px;padding:3px 16px;border-right:1px solid #e0d9ce}
 .italy-results>div:first-child{padding-left:4px}
