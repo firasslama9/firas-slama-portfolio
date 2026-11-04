@@ -2174,3 +2174,20 @@ button{font:inherit}
   border-left:0!important;
   border-right:0!important;
 }
+
+
+/* About quote — smaller, softer and more understated */
+#about .about-copy h2{
+  font-family:var(--sans);
+  font-size:clamp(29px,3.2vw,41px);
+  font-weight:520;
+  line-height:1.18;
+  letter-spacing:-.045em;
+}
+#about .about-copy h2 em{
+  font-family:inherit;
+  font-style:normal;
+  font-weight:520;
+  color:#81927f;
+  letter-spacing:inherit;
+}
