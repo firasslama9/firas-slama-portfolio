@@ -1299,3 +1299,19 @@ button{font:inherit}
     line-height:1.7;
   }
 }
+
+
+/* Specific correction: enlarge the iGV and Summer Peak project summaries. */
+.work-section .work-card-igv .project-description,
+.work-section .work-card-summer .project-description{
+  font-size:16px;
+  line-height:1.75;
+  font-weight:400;
+}
+@media(max-width:700px){
+  .work-section .work-card-igv .project-description,
+  .work-section .work-card-summer .project-description{
+    font-size:14.5px;
+    line-height:1.7;
+  }
+}
