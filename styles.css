@@ -2124,3 +2124,22 @@ button{font:inherit}
   transform:none!important;
   transform-origin:center center!important;
 }
+
+
+/* Final override: experience metrics as a clean, frameless row. */
+.about-section .stats-band.about-stats,
+.about-section .stats-band.about-stats .stat-item,
+.about-section .stats-band.about-stats .stat-value-row,
+.about-section .stats-band.about-stats .stat-icon{
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  outline:0!important;
+}
+.about-section .stats-band.about-stats{
+  padding:0!important;
+}
+.about-section .stats-band.about-stats .stat-item{
+  padding:7px 5px!important;
+}
