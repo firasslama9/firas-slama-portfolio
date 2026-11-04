@@ -2110,3 +2110,9 @@ button{font:inherit}
 @media(max-width:700px){
   .hero-meta img.tunisia-flag-emoji{width:17px;height:17px;flex-basis:17px}
 }
+
+
+/* Ncube 3.0 photograph: center the image within its frame instead of biasing the crop toward the bottom. */
+.image-ncube img{
+  object-position:center center!important;
+}
