@@ -1915,3 +1915,123 @@
     padding-bottom:42px;
   }
 }
+
+
+/* Portfolio density refinement: reduce empty space, preserve typography and all image dimensions. */
+.work-section{
+  padding-top:72px;
+  padding-bottom:78px;
+}
+.work-section .work-heading{
+  margin:30px 0 36px;
+  gap:60px;
+}
+.work-section .project-grid{
+  gap:15px;
+}
+
+/* Safran and Ncube: slightly tighter card framing; keep text sizes and photo frames intact. */
+.work-section .project-safran-featured,
+.work-section .project-grid > .project-card.project-ncube-featured{
+  padding:16px 22px 15px;
+}
+.work-section .project-safran-featured > .project-topline,
+.work-section .project-grid > .project-card.project-ncube-featured > .project-topline{
+  margin-bottom:9px;
+}
+.work-section .project-safran-featured > .project-feature-grid,
+.work-section .project-grid > .project-card.project-ncube-featured > .project-feature-grid{
+  gap:20px;
+}
+.work-section .project-safran-featured .project-title-block > .tag-row,
+.work-section .project-grid > .project-card.project-ncube-featured .project-title-block > .tag-row{
+  margin-top:8px;
+}
+.work-section .project-safran-featured > .project-details,
+.work-section .project-grid > .project-card.project-ncube-featured > .project-details{
+  margin-top:9px;
+  padding-top:7px;
+}
+.work-section .project-safran-featured .details-grid,
+.work-section .project-grid > .project-card.project-ncube-featured .details-grid{
+  margin-top:11px;
+  gap:12px;
+  padding-bottom:5px;
+}
+
+/* iGV and Summer Peak: reduce card padding and internal gaps, not text or visuals. */
+.work-section .project-grid > .project-card.igv-card,
+.work-section .project-grid > .project-card.summer-card{
+  padding:18px 19px 17px;
+}
+.work-section .project-grid > .project-card.igv-card > .project-topline,
+.work-section .project-grid > .project-card.summer-card > .project-topline{
+  margin-bottom:13px;
+}
+.work-section .project-grid > .project-card.igv-card > .tag-row,
+.work-section .project-grid > .project-card.summer-card > .tag-row{
+  margin-top:11px;
+}
+.work-section .project-grid > .project-card.igv-card > .project-details,
+.work-section .project-grid > .project-card.summer-card > .project-details{
+  margin-top:10px;
+  padding-top:8px;
+}
+.work-section .project-grid > .project-card.igv-card > .metric-pair,
+.work-section .project-grid > .project-card.summer-card > .metric-pair{
+  padding-top:12px;
+}
+
+/* Italy: make KPI figures and labels clearer while retaining its compact size. */
+.work-section .project-grid > .project-card.italy-featured .project-outcome-italy{
+  grid-template-columns:68px minmax(0,1fr);
+}
+.work-section .project-grid > .project-card.italy-featured .project-outcome-italy .outcome-number{
+  font-size:32px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-outcome-italy .outcome-label{
+  font-size:12px;
+  line-height:1.45;
+}
+.work-section .project-grid > .project-card.italy-featured .project-outcome-italy .outcome-divider{
+  margin:7px 0;
+}
+
+/* Keep the tighter rhythm responsive, with comfortable side padding on small screens. */
+@media(max-width:900px){
+  .work-section{
+    padding-top:62px;
+    padding-bottom:68px;
+  }
+  .work-section .work-heading{
+    margin:27px 0 30px;
+    gap:32px;
+  }
+  .work-section .project-safran-featured,
+  .work-section .project-grid > .project-card.project-ncube-featured{
+    padding:16px 20px 14px;
+  }
+}
+@media(max-width:700px){
+  .work-section{
+    padding-top:52px;
+    padding-bottom:56px;
+  }
+  .work-section .work-heading{
+    margin:24px 0 26px;
+  }
+  .work-section .project-grid{
+    gap:14px;
+  }
+  .work-section .project-grid > .project-card.igv-card,
+  .work-section .project-grid > .project-card.summer-card{
+    padding:17px 18px 16px;
+  }
+  .work-section .project-safran-featured,
+  .work-section .project-grid > .project-card.project-ncube-featured{
+    padding:16px 18px 14px;
+  }
+  .work-section .project-grid > .project-card.italy-featured .project-outcome-italy .outcome-number{
+    font-size:30px;
+  }
+}
