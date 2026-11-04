@@ -2112,14 +2112,15 @@ button{font:inherit}
 }
 
 
-/* Ncube photo: crop the left side decisively and bring the presenter into the center of the frame. */
+/* Ncube photo: center the full image naturally inside the existing frame. */
 .image-ncube img{
+  display:block!important;
   width:100%!important;
   height:100%!important;
   max-width:100%!important;
   max-height:100%!important;
   object-fit:cover!important;
-  object-position:right center!important;
-  transform:scale(1.85)!important;
-  transform-origin:right center!important;
+  object-position:50% 50%!important;
+  transform:none!important;
+  transform-origin:center center!important;
 }
