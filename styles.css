@@ -1610,3 +1610,31 @@ button{font:inherit}
     right:14px;
   }
 }
+
+
+/* Final Toolkit palette override — equal specificity to the former category colours. */
+.toolkit-section .tool-card:nth-child(1) h3,
+.toolkit-section .tool-card:nth-child(2) h3,
+.toolkit-section .tool-card:nth-child(3) h3,
+.toolkit-section .tool-card:nth-child(4) h3,
+.toolkit-section .tool-card:nth-child(1) .tool-number,
+.toolkit-section .tool-card:nth-child(2) .tool-number,
+.toolkit-section .tool-card:nth-child(3) .tool-number,
+.toolkit-section .tool-card:nth-child(4) .tool-number{
+  color:#343a34 !important;
+}
+.toolkit-section .tool-card:nth-child(1) .tool-symbol,
+.toolkit-section .tool-card:nth-child(2) .tool-symbol,
+.toolkit-section .tool-card:nth-child(3) .tool-symbol,
+.toolkit-section .tool-card:nth-child(4) .tool-symbol{
+  background:#eeeee8 !important;
+  color:#59675a !important;
+}
+.toolkit-section .tool-card:nth-child(1) .tool-tags span,
+.toolkit-section .tool-card:nth-child(2) .tool-tags span,
+.toolkit-section .tool-card:nth-child(3) .tool-tags span,
+.toolkit-section .tool-card:nth-child(4) .tool-tags span{
+  background:#f0efe9 !important;
+  color:#62685f !important;
+  border:1px solid #e5e3da !important;
+}
