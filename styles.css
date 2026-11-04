@@ -1652,3 +1652,25 @@ button{font:inherit}
     font-size:22px;
   }
 }
+
+
+/* Toolkit software strip — centered heading and regular-weight labels. */
+.toolkit-section .software-panel{
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.toolkit-section .software-panel .micro-label{
+  width:100%;
+  margin:0;
+  text-align:center;
+  font-weight:400;
+}
+.toolkit-section .software-list{
+  width:100%;
+  justify-content:center;
+}
+.toolkit-section .software-list>span{
+  font-weight:400;
+}
