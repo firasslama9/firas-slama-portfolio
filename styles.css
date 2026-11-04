@@ -1304,3 +1304,161 @@
     width:100%;
   }
 }
+
+
+/* Balance iGV and Summer Peak as a matched two-card row. */
+.work-section .project-grid{
+  align-items:stretch;
+}
+.work-section .project-grid > .project-card.igv-card,
+.work-section .project-grid > .project-card.summer-card{
+  align-self:stretch;
+  height:100%;
+}
+.work-section .project-grid > .project-card.igv-card > .project-visual-igv,
+.work-section .project-grid > .project-card.summer-card > .project-visual-summer{
+  flex:0 0 205px;
+  height:205px;
+  min-height:205px;
+}
+.work-section .project-grid > .project-card.igv-card > .metric-pair,
+.work-section .project-grid > .project-card.summer-card > .metric-pair{
+  margin-top:auto;
+  padding-top:16px;
+}
+
+/* AIESEC Italy: compact featured-card composition, matching the Safran hierarchy. */
+.work-section .project-grid > .project-card.italy-featured{
+  grid-column:1/-1;
+  display:block;
+  padding:27px 31px 25px;
+  margin:0;
+  background:#2c2a28;
+}
+.work-section .project-grid > .project-card.italy-featured > .project-topline{
+  margin-bottom:18px;
+}
+.work-section .project-grid > .project-card.italy-featured > .project-feature-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:clamp(28px,4vw,50px);
+  align-items:center;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block{
+  min-width:0;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block > .role-tag{
+  margin-bottom:8px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block h3{
+  min-height:0;
+  margin:0 0 12px;
+  font-size:clamp(28px,3vw,36px);
+  line-height:1.1;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block .project-summary{
+  min-height:0;
+  max-width:590px;
+  margin:0;
+  font-size:12px;
+  line-height:1.65;
+}
+.work-section .project-grid > .project-card.italy-featured .project-visual-italy{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  max-width:560px;
+  height:150px;
+  min-height:150px;
+  margin:14px 0 0;
+  padding:9px 13px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid #e7e0d7;
+  border-radius:11px;
+  box-shadow:0 6px 17px #00000014;
+}
+.work-section .project-grid > .project-card.italy-featured .project-visual-italy img{
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+  object-position:center;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block > .tag-row{
+  margin-top:13px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-title-block > .tag-row span{
+  min-height:29px;
+  padding:5px 9px;
+  font-size:9px;
+}
+.work-section .project-grid > .project-card.italy-featured .project-outcome-italy{
+  display:grid;
+  grid-template-columns:76px minmax(0,1fr);
+  align-items:center;
+  column-gap:11px;
+  row-gap:2px;
+  padding-left:29px;
+  border-left:1px solid #4c4741;
+}
+.work-section .project-grid > .project-card.italy-featured .project-outcome-italy .outcome-number{
+  font-size:34px;
+  line-height:1.05;
+}
+.work-section .project-grid > .project-card.italy-featured .project-outcome-italy .outcome-label{
+  font-size:11px;
+  line-height:1.45;
+}
+.work-section .project-grid > .project-card.italy-featured .project-outcome-italy .outcome-divider{
+  grid-column:1/-1;
+  margin:8px 0;
+}
+.work-section .project-grid > .project-card.italy-featured > .project-details{
+  margin-top:18px;
+  padding-top:12px;
+}
+@media(max-width:900px){
+  .work-section .project-grid > .project-card.italy-featured{
+    padding:24px 25px 22px;
+  }
+  .work-section .project-grid > .project-card.italy-featured > .project-feature-grid{
+    gap:22px;
+  }
+  .work-section .project-grid > .project-card.italy-featured .project-outcome-italy{
+    grid-template-columns:68px minmax(0,1fr);
+    padding-left:20px;
+  }
+}
+@media(max-width:700px){
+  .work-section .project-grid > .project-card.igv-card,
+  .work-section .project-grid > .project-card.summer-card{
+    height:auto;
+  }
+  .work-section .project-grid > .project-card.igv-card > .project-visual-igv,
+  .work-section .project-grid > .project-card.summer-card > .project-visual-summer{
+    flex-basis:185px;
+    height:185px;
+    min-height:185px;
+  }
+  .work-section .project-grid > .project-card.italy-featured{
+    padding:22px 20px;
+  }
+  .work-section .project-grid > .project-card.italy-featured > .project-feature-grid{
+    grid-template-columns:1fr;
+    gap:19px;
+  }
+  .work-section .project-grid > .project-card.italy-featured .project-visual-italy{
+    height:155px;
+    min-height:155px;
+  }
+  .work-section .project-grid > .project-card.italy-featured .project-outcome-italy{
+    grid-template-columns:68px minmax(0,1fr);
+    padding:17px 0 0;
+    border-left:0;
+    border-top:1px solid #4c4741;
+  }
+}
