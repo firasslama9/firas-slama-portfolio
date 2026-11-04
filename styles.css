@@ -1197,3 +1197,42 @@ button{font:inherit}
   .work-section .skill-list span{font-size:9px}
   .work-section .work-card .skill-list span{font-size:8px}
 }
+
+
+/* Selected Work — make capability/skill tags clearly readable at a glance. */
+.work-section .skill-list{
+  gap:8px;
+  margin-top:19px;
+}
+.work-section .skill-list span{
+  display:inline-flex;
+  align-items:center;
+  min-height:31px;
+  padding:7px 12px;
+  font-size:12.5px;
+  line-height:1.25;
+  font-weight:750;
+  letter-spacing:.005em;
+}
+.work-section .work-card .skill-list{
+  gap:7px;
+}
+.work-section .work-card .skill-list span{
+  min-height:28px;
+  padding:6px 10px;
+  font-size:11px;
+  line-height:1.25;
+  font-weight:750;
+}
+@media(max-width:700px){
+  .work-section .skill-list span{
+    min-height:28px;
+    padding:6px 10px;
+    font-size:10.5px;
+  }
+  .work-section .work-card .skill-list span{
+    min-height:26px;
+    padding:5px 9px;
+    font-size:9.5px;
+  }
+}
