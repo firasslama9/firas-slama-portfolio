@@ -436,3 +436,154 @@ button{font:inherit}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   [data-reveal]{opacity:1;transform:none}
 }
+
+
+/* About highlights — bring the professional focus and experience figures
+   together as a clear, colourful proof section. */
+.about-section .about-focus{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:9px;
+  margin:23px 0 0;
+}
+.about-section .focus-pill{
+  display:inline-flex;
+  align-items:center;
+  min-height:35px;
+  padding:8px 14px;
+  border:1px solid transparent;
+  border-radius:999px;
+  font-size:9px;
+  line-height:1.2;
+  font-weight:850;
+  letter-spacing:.075em;
+  text-transform:uppercase;
+}
+.about-section .focus-projects{
+  color:#a94d39;
+  background:#f6dfd5;
+  border-color:#ecd0c3;
+}
+.about-section .focus-business{
+  color:#4d6d55;
+  background:#e2eadf;
+  border-color:#d2dfce;
+}
+.about-section .focus-operations{
+  color:#86652b;
+  background:#f2e9cf;
+  border-color:#e9ddbb;
+}
+.about-section .about-layout{
+  margin-top:31px;
+}
+.about-section .about-stats{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:11px;
+  margin:39px 0 0;
+  padding:0;
+  border:0;
+  background:transparent;
+}
+.about-section .about-stats .stat-item{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:7px;
+  min-width:0;
+  min-height:120px;
+  padding:17px 15px 16px;
+  border:1px solid #e2dbcf;
+  border-radius:14px;
+  background:#fffdf9;
+  box-shadow:0 7px 19px #3e382b08;
+}
+.about-section .about-stats .stat-item:first-child,
+.about-section .about-stats .stat-item:last-child{
+  padding-inline:15px;
+}
+.about-section .about-stats .stat-item strong{
+  display:block;
+  color:#d9654d;
+  font-size:clamp(34px,3.3vw,43px);
+  line-height:1;
+  font-weight:850;
+  letter-spacing:-.075em;
+}
+.about-section .about-stats .stat-item span{
+  display:block;
+  max-width:175px;
+  color:#676960;
+  font-size:10px;
+  line-height:1.45;
+  font-weight:700;
+}
+.about-section .about-stats .stat-item:nth-child(2){background:#f1f5ee;border-color:#dce7d8}
+.about-section .about-stats .stat-item:nth-child(2) strong{color:#5e8064}
+.about-section .about-stats .stat-item:nth-child(3){background:#f8f2df;border-color:#eee3bf}
+.about-section .about-stats .stat-item:nth-child(3) strong{color:#ad8136}
+.about-section .about-stats .stat-item:nth-child(4){background:#edf3f6;border-color:#dce7ec}
+.about-section .about-stats .stat-item:nth-child(4) strong{color:#557c91}
+.about-section .about-stats .stat-item:nth-child(5){background:#f3edf4;border-color:#e6dbe9}
+.about-section .about-stats .stat-item:nth-child(5) strong{color:#8b6889}
+
+@media(max-width:1050px){
+  .about-section .about-stats{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:10px;
+  }
+  .about-section .about-stats .stat-item{
+    min-height:108px;
+  }
+}
+@media(max-width:700px){
+  .about-section .about-focus{
+    gap:7px;
+    margin-top:18px;
+  }
+  .about-section .focus-pill{
+    min-height:32px;
+    padding:7px 10px;
+    font-size:7.5px;
+  }
+  .about-section .about-layout{
+    margin-top:25px;
+  }
+  .about-section .about-stats{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:9px;
+    margin-top:27px;
+  }
+  .about-section .about-stats .stat-item{
+    min-height:104px;
+    padding:14px 13px;
+  }
+  .about-section .about-stats .stat-item:first-child,
+  .about-section .about-stats .stat-item:last-child{
+    padding-inline:13px;
+  }
+  .about-section .about-stats .stat-item strong{
+    font-size:34px;
+  }
+  .about-section .about-stats .stat-item span{
+    font-size:9px;
+  }
+  .about-section .about-stats .stat-item:nth-child(5){
+    grid-column:1/-1;
+  }
+}
+@media(max-width:390px){
+  .about-section .focus-pill{
+    font-size:7px;
+    letter-spacing:.035em;
+    padding-inline:8px;
+  }
+  .about-section .about-stats .stat-item{
+    min-height:98px;
+  }
+  .about-section .about-stats .stat-item strong{
+    font-size:31px;
+  }
+}
