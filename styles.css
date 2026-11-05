@@ -2113,7 +2113,7 @@ button{font:inherit}
 }
 
 
-/* Ncube photo: center the full image naturally inside the existing frame. */
+/* Ncube photo: deliberately reframe the crop so the subject shifts visibly left. */
 .image-ncube img{
   display:block!important;
   width:100%!important;
@@ -2121,8 +2121,8 @@ button{font:inherit}
   max-width:100%!important;
   max-height:100%!important;
   object-fit:cover!important;
-  object-position:70% 50%!important;
-  transform:none!important;
+  object-position:100% 50%!important;
+  transform:translateX(-4%) scale(1.12)!important;
   transform-origin:center center!important;
 }
 
