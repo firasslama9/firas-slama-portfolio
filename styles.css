@@ -2218,3 +2218,9 @@ button{font:inherit}
   letter-spacing:.13em;
   text-transform:uppercase;
 }
+
+
+/* Toolkit skill tags: use regular weight for a lighter, less emphatic look. */
+.toolkit-section .tool-card .tool-tags span{
+  font-weight:400 !important;
+}
