@@ -2113,26 +2113,6 @@ button{font:inherit}
 }
 
 
-/* Ncube 3.0 photograph: center the image within its frame instead of biasing the crop toward the bottom. */
-.image-ncube img{
-  object-position:center center!important;
-}
-.project-image.image-ncube > img{
-  position:absolute!important;
-  top:-12%!important;
-  left:-14%!important;
-  display:block!important;
-  width:128%!important;
-  height:124%!important;
-  max-width:none!important;
-  max-height:none!important;
-  object-fit:cover!important;
-  object-position:center center!important;
-  transform:none!important;
-  margin:0!important;
-}
-
-
 /* Final override: experience metrics as a clean, frameless row. */
 .about-section .stats-band.about-stats,
 .about-section .stats-band.about-stats .stat-item,
