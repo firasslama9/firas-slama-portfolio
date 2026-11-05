@@ -2283,6 +2283,8 @@ button{font:inherit}
   height:100%;
   object-fit:contain;
   object-position:center;
+  background:transparent!important;
+  mix-blend-mode:multiply!important;
 }
 @media(max-width:700px){
   #work .work-card-igv .paired-main{
