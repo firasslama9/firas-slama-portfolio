@@ -78,6 +78,20 @@
     "GOING DEEPER":"POUR ALLER PLUS LOIN","Want to see more about how I planned, managed and delivered these projects?":"Envie d’en savoir plus sur la manière dont j’ai planifié, piloté et réalisé ces projets ?",
     "View the PDF portfolio":"Voir le portfolio PDF","Back to top ↑":"Retour en haut ↑",
     "Main navigation":"Navigation principale","Firas Slama home":"Accueil de Firas Slama","Open navigation":"Ouvrir le menu","Close navigation":"Fermer le menu",
+    "PEOPLE PROCESS PERFORMANCE":"PERSONNES · PROCESSUS · PERFORMANCE",
+    "Arabic · English · French":"Arabe · Anglais · Français",
+    "Strategy formulation & implementation":"Formulation et mise en œuvre de la stratégie",
+    "Context analysis":"Analyse du contexte",
+    "Process enhancement & automation":"Amélioration et automatisation des processus",
+    "B2B sales & tracking":"Vente B2B et suivi commercial",
+    "Project coordination":"Coordination de projet",
+    "Budget tracking":"Suivi budgétaire",
+    "Customer journey":"Parcours client",
+    "National direction":"Pilotage national",
+    "Coaching":"Accompagnement",
+    "Performance tracking":"Suivi de la performance",
+    "DMAIC":"DMAIC","FMEA / AMDEC":"AMDEC","Kanban":"Kanban",
+    "DEFINE":"DÉFINIR","MEASURE":"MESURER","ANALYZE":"ANALYSER","IMPROVE":"AMÉLIORER","CONTROL":"CONTRÔLER",
     "Google Sheets logo":"Logo Google Sheets","Google Sheets official 2026 icon":"Icône officielle Google Sheets","Microsoft Excel logo":"Logo Microsoft Excel","Trello logo":"Logo Trello","Progress Podio app icon":"Icône de l’application Podio","Slack multicolour brand mark":"Logo multicolore de Slack"
   };
 
