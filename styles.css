@@ -146,7 +146,7 @@ button{font:inherit}
 .image-safran{height:220px;aspect-ratio:2.7/1;background:#d7d4cd}
 .image-safran img{object-fit:cover;object-position:center 52%}
 .image-ncube{height:238px;aspect-ratio:2.0/1;background:#2f302b;border-color:#514d45}
-.image-ncube img{object-fit:cover;object-position:center 88%}
+.image-ncube img{object-fit:cover;object-position:55% 88%}
 .project-image figcaption{position:absolute;left:10px;bottom:10px;padding:6px 9px;border-radius:999px;background:#222822d9;color:#f8f5ef;font-size:8px;letter-spacing:.04em}
 .feature-results{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(160px,1.15fr);gap:0;align-items:center;margin-top:18px;padding:13px 3px 5px;border-top:1px solid #e2dbcf}
 .result-item{display:flex;align-items:center;gap:13px;min-width:0;padding:3px 18px 3px 4px;border-right:1px solid #e0d9ce}
