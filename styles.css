@@ -2225,3 +2225,49 @@ button{font:inherit}
 .toolkit-section .tool-card .tool-tags span{
   font-weight:400 !important;
 }
+
+/* Selected Work KPIs — smaller, quieter figures with clear supporting labels. */
+#work .feature-results .result-item strong{
+  font-size:28px!important;
+  font-weight:650!important;
+  letter-spacing:-.035em;
+}
+#work .feature-results .result-item span{
+  font-size:10px!important;
+  font-weight:550!important;
+  line-height:1.45;
+}
+#work .compact-results strong{
+  font-size:22px!important;
+  font-weight:650!important;
+  letter-spacing:-.035em;
+}
+#work .compact-results span{
+  font-size:9px!important;
+  font-weight:550!important;
+  line-height:1.4;
+}
+#work .italy-results strong{
+  font-size:25px!important;
+  font-weight:650!important;
+  letter-spacing:-.035em;
+}
+#work .italy-results span{
+  font-size:10px!important;
+  font-weight:550!important;
+  line-height:1.45;
+}
+@media(max-width:700px){
+  #work .feature-results .result-item strong{font-size:24px!important}
+  #work .feature-results .result-item span{font-size:9px!important}
+  #work .compact-results strong{font-size:20px!important}
+  #work .compact-results span{font-size:8.5px!important}
+  #work .italy-results strong{font-size:22px!important}
+  #work .italy-results span{font-size:9px!important}
+}
+@media(max-width:390px){
+  #work .feature-results .result-item strong{font-size:22px!important}
+  #work .compact-results strong{font-size:18px!important}
+  #work .italy-results strong{font-size:20px!important}
+}
+
