@@ -2113,11 +2113,9 @@ button{font:inherit}
 }
 
 
-/* Ncube photo: use an oversized, left-offset image inside the clipped frame.
-   This moves the image box itself rather than relying only on object-position. */
-.project-image.image-ncube{
-  position:relative!important;
-  overflow:hidden!important;
+/* Ncube 3.0 photograph: center the image within its frame instead of biasing the crop toward the bottom. */
+.image-ncube img{
+  object-position:center center!important;
 }
 .project-image.image-ncube > img{
   position:absolute!important;
