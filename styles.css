@@ -2271,11 +2271,11 @@ button{font:inherit}
   aspect-ratio:2.2/1;
   height:auto;
   min-height:0;
-  padding:10px;
+  padding:0;
   justify-self:center;
-  background:#fff;
-  border:1px solid #e6e1d8;
-  border-radius:12px;
+  background:transparent;
+  border:0;
+  border-radius:0;
   overflow:hidden;
 }
 #work .work-card-igv .image-igv img{
