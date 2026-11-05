@@ -2191,3 +2191,29 @@ button{font:inherit}
   color:#81927f;
   letter-spacing:inherit;
 }
+
+
+/* About quote: a more distinctive, refined typeface and a quiet personal note. */
+#about .about-copy h2{
+  font-family:"Manrope",var(--sans);
+  font-size:clamp(28px,3vw,39px);
+  font-weight:500;
+  line-height:1.2;
+  letter-spacing:-.055em;
+}
+#about .about-copy h2 em{
+  font-family:inherit;
+  font-style:normal;
+  font-weight:400;
+  color:#81927f;
+  letter-spacing:inherit;
+}
+#about .about-quote-note{
+  margin:11px 0 0;
+  color:#85847b;
+  font-family:"Manrope",var(--sans);
+  font-size:11.5px;
+  font-weight:400;
+  line-height:1.65;
+  letter-spacing:.015em;
+}
