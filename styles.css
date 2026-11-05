@@ -2257,3 +2257,40 @@ button{font:inherit}
   #work .italy-results strong{font-size:20px!important}
 }
 
+
+
+/* Final iGV image restoration: use the newly uploaded rectangular logo and keep it clearly visible. */
+#work .work-card-igv .paired-main{
+  grid-template-columns:minmax(0,1fr) minmax(190px,220px);
+  gap:18px;
+}
+#work .work-card-igv .image-igv{
+  display:flex;
+  width:100%;
+  max-width:220px;
+  aspect-ratio:2.2/1;
+  height:auto;
+  min-height:0;
+  padding:10px;
+  justify-self:center;
+  background:#fff;
+  border:1px solid #e6e1d8;
+  border-radius:12px;
+  overflow:hidden;
+}
+#work .work-card-igv .image-igv img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+}
+@media(max-width:700px){
+  #work .work-card-igv .paired-main{
+    grid-template-columns:minmax(0,1fr) 132px;
+    gap:12px;
+  }
+  #work .work-card-igv .image-igv{
+    max-width:132px;
+    padding:7px;
+  }
+}
