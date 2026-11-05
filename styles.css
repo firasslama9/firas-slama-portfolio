@@ -171,7 +171,7 @@ button{font:inherit}
 .image-logo{background:transparent;border-color:transparent;box-shadow:none}
 .image-logo img{object-fit:contain;object-position:center}
 .image-igv{width:100%;max-width:190px;aspect-ratio:2.21/1;height:auto;justify-self:center;padding:0;background:transparent;border-color:transparent}
-.image-igv img{object-fit:contain;object-position:center;background:transparent!important;mix-blend-mode:normal!important;filter:url(#igv-white-to-transparent)}
+.image-igv img{object-fit:contain;object-position:center;background:transparent!important;mix-blend-mode:multiply!important}
 .image-portrait{width:154px;aspect-ratio:3/4;height:auto;justify-self:center;background:#e8e1d6}
 .image-summer img{object-fit:contain;object-position:center}
 .compact-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-top:13px;padding-top:11px;border-top:1px solid #e4ddd2}
