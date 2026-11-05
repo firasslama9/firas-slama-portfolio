@@ -2113,17 +2113,25 @@ button{font:inherit}
 }
 
 
-/* Ncube photo: deliberately reframe the crop so the subject shifts visibly left. */
-.image-ncube img{
+/* Ncube photo: use an oversized, left-offset image inside the clipped frame.
+   This moves the image box itself rather than relying only on object-position. */
+.project-image.image-ncube{
+  position:relative!important;
+  overflow:hidden!important;
+}
+.project-image.image-ncube > img{
+  position:absolute!important;
+  top:-12%!important;
+  left:-14%!important;
   display:block!important;
-  width:100%!important;
-  height:100%!important;
-  max-width:100%!important;
-  max-height:100%!important;
+  width:128%!important;
+  height:124%!important;
+  max-width:none!important;
+  max-height:none!important;
   object-fit:cover!important;
-  object-position:100% 50%!important;
-  transform:translateX(-4%) scale(1.12)!important;
-  transform-origin:center center!important;
+  object-position:center center!important;
+  transform:none!important;
+  margin:0!important;
 }
 
 
